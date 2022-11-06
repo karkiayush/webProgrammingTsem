@@ -1,0 +1,8 @@
+IP(Internet protocal) Address : It is a unique address that identifies a device connected in the internet using the Internet Protocol to communicate over a network. All of the devices that are connected to the internet have their unique ip address. 
+
+IP address are the numerical labels that are given to the devices that are connected to the computer network following standard set of internet protocals for communication. An IP address serves two main functions: network interface identification and location addressing.
+
+Internet Protocol version 4 (IPv4) defines an IP address as a 32-bit number.[2] However, because of the growth of the Internet and the depletion of available IPv4 addresses, a new version of IP (IPv6), using 128 bits for the IP address, was standardized in 1998.[3][4][5] IPv6 deployment has been ongoing since the mid-2000s.
+IP addresses are written and displayed in human-readable notations, such as 192.0.2.1 in IPv4, and 2001:db8:0:1234:0:567:8:1 in IPv6.
+
+When we put the ip address in the browser, it gathers the information from other servers and display it in the browsers.

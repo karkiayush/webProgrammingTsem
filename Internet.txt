@@ -1,0 +1,15 @@
+INTERNET : 
+
+www.youtube.com  is a url(uniform resource locator) or link where the middle one is "youtube" is domain name and the third part ".com" is termed as "top level domain" or "domain extension" or "new domain extension". And if we wanna make the website, we must buy the domain name. 
+
+Why do we need domain name and domain extension ?
+=> If you are taking your brand seriously you’ll want to look legitimate with an official domain and also you don’t want anyone else taking your business name. That’s basically giving them the credit. For example let’s say you build an Instagram page with the name HOT T SHIRTS but you don’t have your domain. You can do all the branding, build a profitable business and than someone Can take the domain name than a lot of your customers will be going to their website assume it’s your and then all the work you’ve done will be compromised.
+
+The selling of the domain name is done by many organizations or website like godaddy.com and many more like that but that is not the top who controls the domain name. In the top postion there is the organizations/authority named as ICANN(international coorporation for assigned names and numbers).
+
+ICANN is the non profitable organizations which is the top level authority based on LA California, which have all of the power of selling the domain extension in high bidding. 
+
+"About registries & registrars" ? registrars sell the domain extension along with the domain name. 
+
+But ICANN is not the one who only controls the whole internet.
+Internet is the decentralized network, like the net. Here the devices connected in the internet works as a servers or makes the internet. 
