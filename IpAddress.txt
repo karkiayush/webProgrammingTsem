@@ -6,4 +6,4 @@ Internet Protocol version 4 (IPv4) defines an IP address as a 32-bit number.[2] 
 IP addresses are written and displayed in human-readable notations, such as 192.0.2.1 in IPv4, and 2001:db8:0:1234:0:567:8:1 in IPv6.
 
 When we put the ip address in the browser, it gathers the information from other servers and display it in the browsers.
-DNS servers : They are the one that connectt the entered domain name to the IP address.If any of the websites are blocked in the particular places or the particular countries, the ISPs block via DNS servers. In short DNS servers don't allow the connection of the domain with the respective IP Address.
+DNS servers : They are the one that connectt the entered domain name to the IP address.If any of the websites are blocked in the particular places or the particular countries, the ISPs block via DNS servers. In short DNS servers don't allow the connection of the domain with the respective IP Address. servers
