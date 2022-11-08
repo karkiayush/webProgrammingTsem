@@ -1,0 +1,6 @@
+Vpn which stands for the Virtual Private network can be defined as the service that creates the safe, encrypted online connecetion. In lamen terms, vpn is nothing but a service that helps us in accessing the different kind of content that is banned in particular nation, region by changing the ip address in the safest way.
+
+When you switch on a VPN, your traffic is routed through an encrypted tunnel to a server operated by the VPN company. 
+The VPN client software on your computer encrypts your data traffic and sends it to the VPN server through a secure connection. The data goes through your ISP, but it's been so scrambled because of the encryption, they can no longer decipher it. The encrypted data from your computer is decrypted by the VPN server.That means that your ISP won't be able to see your web traffic.
+
+Explaning it more clearly. Lets say we turned on vpn connection in our system, we will be connected with the vpn server in secured way, which may in any of the countries where we wanna connect. And after the vpn server send your request to the respective server which thinks that the info is needed to any of the user of that same country where the vpn server exists. Thus in this way vpn helps us in bypassing the local isp in secured way without showing our any of the browsing information to the local ISPs.
