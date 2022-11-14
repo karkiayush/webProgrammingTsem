@@ -1,24 +1,38 @@
-<!DOCTYPE  html>
+<!DOCTYPE html>
+
 <head>
     <title>home page</title>
 </head>
+
 <body>
     <h1>HTML(Hyper Text markup language)</h1>
-    <p>HTML <blockquote> Hyper text markup language</blockquote> </p>
+    <p>HTML
+        <blockquote> Hyper text markup language</blockquote>
+    </p>
 
     <!-- in the image tag, some of the modern attributes are : 
         1> longdesc: for providing the description of the image which ultimately helps in SEO
 
-        2> ismap: 
+        2> ismap: it is an attribute that send the coordinates of that point which is clicked by the users.
+        3> srcset : where we'll upload image such that same image of different sizes can be shown depending upon the size of the browsing devices.The same work can be done using the mediaquery in css.
+        4> sizes
+        5> cross origin
     -->
-    <img src="usi.jpg" alt="image loading" height="500" longdesc="this is the image of the road cover with the rock's mountain, which is almost straight">
+    <a href="action.php">
+        <img src="usi.jpg" alt="image loading" height="500"
+            longdesc="this is the image of the road cover with the rock's mountain, which is almost straight" ismap>
+    </a>
 
-    <div><img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=is&k=20&c=MB1-O5fjps0hVPd97fMIiEaisPMEn4XqVvQoJFKLRrQ=" alt="slowly loading"></div>
-    
+    <img src="usi.jpg" alt="image loading" width="300" srcset="">
+
+    <div><img
+            src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=is&k=20&c=MB1-O5fjps0hVPd97fMIiEaisPMEn4XqVvQoJFKLRrQ="
+            alt="slowly loading"></div>
+
     <br>
-    <a href="https://www.google.com" target="_blank">Go to google</a><br>
-    <a href="https://www.facebook.com" target="_parent">Go to facebook</a><br>
-    <a href="https://www.youtube.com" target="_top">Go to youtube</a><br>
-    <a href="/Vpn.txt">Vpn Info</a><br>
-    <a href="/lab01.html">src code</a>
+    <a href="https://www.google.com" target="blank">google</a>
+    <a href="https://www.facebook.com" target="blank">facebook</a>
+    <a href="https://www.bing.com" target="blank">bing</a>
+    <a href="/Vpn.txt" target="blank">Vpn Info</a><br>
+    <a href="/lab01.html" target="blank">src code</a>
 </body>
