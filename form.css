@@ -1,0 +1,40 @@
+@font-face {
+  font-family: firacode;
+  src: url(fonts/FiraSans.ttf);
+}
+#bodydiv {
+  background-color: steelblue;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+#titlediv {
+  background-color: burlywood;
+  border-radius: 80px;
+  font-family: sans-serif;
+}
+#title {
+  /* background-color: blue; */
+  text-align: center;
+}
+
+#resetbtn {
+  /* border: 1px solid black; */
+  border: 10px;
+}
+#submission {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#username,
+#company,
+#smalltitle,
+#department,
+#emailaddress,
+#phnum {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 100px;
+}

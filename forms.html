@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div id="bodydiv">
+        <div id="titlediv">
+            <h1 id="title">Client Details</h1>
+            <p id="title">Enter the details of all incoming clients</p>
+        </div>
+
+        <form action="">
+            <!-- for user name  -->
+            <label for="username">Client Name</label>
+            <input type="text" id="username" name="username" required style="margin: 20px;"><br>
+            <!-- for company name  -->
+            <label for="company">Company</label>
+            <input type="text" id="company" class="company" required style="margin: 20px;"><br>
+            <!-- for title  -->
+            <label for="smalltitle">Title</label>
+            <input type="text" id="smalltitle" class="title" style="margin: 20px;"><br>
+
+            <!-- for the department section  -->
+            <label for="department">Department</label>
+            <select id="department" name="department" style="margin: 20px;">
+                <option value="acf">Account and Finance</option>
+                <option value="hr">HR</option>
+                <option value="smbd">Sales and marketing (Business development)</option>
+                <option value="ifst">Infrastructures</option>
+            </select><br>
+
+            <!-- For the radio button for contact method  -->
+            <div style="margin: top 20px">
+                <label for="radiobutton" name="contactmethod">Preferred contact method </label>
+                <input type="radio" id="contactmethod" name="contactmethod" required>
+                <label for="contactmethod">Email</label>
+
+                <input type="radio" id="contactMethod" name="contactmethod" required>
+                <label for="contactMethod">Phone</label><br>
+            </div>
+            <!-- for the email address of client  -->
+            <label for="emailaddress">Email</label>
+            <input type="email" id="emailaddress" class="emailaddress" style="margin: 20px;"><br>
+
+            <!-- for the gender  -->
+            Gender
+            <input type="radio" id="gender" name="gender" style="margin: 20px;">
+            <label for="gender">Male</label>
+
+            <input type="radio" id="Gender" name="gender">
+            <label for="Gender">Female</label>
+
+            <input type="radio" id="Geender" name="gender">
+            <label for="Geender">Third Gender</label>
+
+            <!-- for the phone num  -->
+            <br>
+            <label for="phnum ">Phone</label>
+            <input type=" number" name="phnum" id="phnum" style="margin: 20px;">
+
+            <!-- for covid vaccine status  -->
+            <br>
+            Covid Vaccinated ?
+            <input type="radio" id="firstdose" name="vaccine">
+            <label for="firstdose">first dose only</label>
+
+            <input type="radio" id="seconddose" name="vaccine">
+            <label for="seconddose">second dose only</label>
+
+            <input type="radio" id="both" name="vaccine">
+            <label for="both">both</label>
+            <br><br>
+            <a href=""><input type="reset" id="resetbtn" name="resetbtn"></a>
+            <a href=""><input type="submit" id="submission" name="submission"></a>
+
+        </form>
+    </div>
+</body>
+
+</html>
