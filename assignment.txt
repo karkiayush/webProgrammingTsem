@@ -1,0 +1,279 @@
+Number System 
+
+Number system can be defined as the convention for representing quantities. It can also be defined as the system used to express the numbers in various formats. It is the system representing numbers. 
+
+Types of Number Systems 
+
+ There are different types of number systems in which     the four main types are as follows. 
+
+Binary number system (Base-2) 
+
+Octal number system (Base-8) 
+
+Decimal number system (Base-10) 
+
+Hexadecimal number system (Base-16) 
+
+Binary Number System 
+
+The binary number system is base 2 number system since it uses only two digits: 0 and 1. The digits 0 and 1 are called bits and all together 8 bits make a byte. All the computer system works in the bit operation I.e. computer system only understands 0 and 1. For example: 10012, 10101012, 1111012 are some of the examples of numbers in the binary number system. 
+
+ 
+
+ 
+
+Decimal Number System 
+
+Decimal number system can be defined as the number system which is of base 10 as it uses the numbers from 0 to 9. It is probably the most used number system. It consists of ten single digit numbers: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 and the digit behind 9 is 10 which is again the combination of 1 and 0.  For example: 54810, 234510, 112310 etc. 
+
+Octal Number System  
+
+Octal number system can be defined as the number system which has its base as eight. It uses the numbers from 0 to 7. That means the octal number system consists of eight single digit numbers: 0, 1, 2, 3, 4, 5, 6, 7. The Octal number system supports the digits from 0 to 7. Beyond 7, numbers such as 8, 9 are not octal. For example: 1248, 2358, 6238 etc. 
+
+Hexadecimal Number System 
+
+Hexadecimal number system is the number system with base value equal to 16. It is also pronounced as hex. Hexadecimal numbers are represented by only 16 symbols(values), and they are: 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Here each digit represents a decimal value. For example, D is equal to base-10 13. 
+
+ 
+
+Conversion Technique 
+
+Decimal to binary 
+
+i> Integer decimal to binary 
+
+To convert the integer decimal to binary numbers, the following steps are followed:  
+
+A> Divide the given decimal number by “2”, where it gives the result along with the remainder. 
+
+B> If the decimal number is even, the result will be whole, and the remainder will be “0”. 
+
+C> If the decimal number is odd, the division will be done such that the remainder will be “1”. 
+
+D> The division will be done until we get the result as 0. And after that all the obtained remainder is arranged in such a way that the least significant bit (LSB) is at the top and the Most significant bit (MSB) is at the bottom. Also, we can say that the remainder is arranged in the order of button to top. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ For example: 
+
+4210 to ?2 
+
+Solution:  
+
+42/2 = 21(remainder=0) 
+
+21/2 = 10(remainder=1) 
+
+10/2 = 5(remainder=0) 
+
+5/2 = 2(remainder=1) 
+
+2/2 = 1(remainder=0) 
+
+1/2 = 0(remainder=1) 
+
+Thus 4210 = 1010102 
+
+ii> fractional decimal to binary 
+
+To convert the fractional decimal to binary numbers, the following steps are followed:  
+
+A> Divide the given integer part of the fractional decimal number by “2”, where it gives the result along with the remainder. For the integer part same above procedure is followed 
+
+  
+
+ 
+
+ 
+
+B> Now for the decimal part, we simply multiply it with 2 and from the multiplication result, we will pick out the integer part. 
+
+C> The same process of step B is followed for some number of line (assume for 5 line) and the result is obtained by arranging the separated digit of integer part in the order of top to bottom. 
+
+ For example: 
+
+10.55410 to ?2 
+
+Solution:  
+
+For the integer part 
+
+10/2 = 5(remainder=0) 
+
+5/2 = 2(remainder=1) 
+
+2/2 = 1(remainder=0) 
+
+1/2 = 0(remainder=1) 
+
+For the fractional part 
+
+0.554*2=1.108 -->1 
+
+0.108*2=0.216 -->0 
+
+0.216*2=0.432-->0 
+
+0.432*2=0.864-->0 
+
+ 
+
+ 
+
+0.864*2=1.728-->1 
+
+Thus 10.55410 = 1010.100012 
+
+Binary to decimal 
+
+i> Integer binary to decimal 
+
+A> At first the give number is copied down and then each digit is multiplied with 2 such that the power of 2 starts from 0 and increases moving from right to left. 
+
+B> Now after multiplication with 2, each digit is added, and the result of addition is the required that we want. 
+
+For example: 
+
+11012 to ?10   
+
+Solution: 1*23+1*22+0*21+1*20 = 8+4+1=13 
+
+Thus 11012 = 1310   
+
+i> Fractional binary to decimal 
+
+A> At first the give number is copied down and then if there is the presence of the integer part, the same above process is followed. 
+
+ 
+
+ 
+
+ 
+
+B> Now for the fractional part, the numbers are multiplied with two and added like above but here the power of 2 is placed from left to right and will be negative and the result is obtained after the addition. 
+
+For example: 
+
+10.10012 to ?10   
+
+Solution:  
+
+1*21+0*20+1*2-1+0*2-2+0*2-3+1*2-4  
+
+=2+0.5+0.0625 
+
+=2.53125 
+
+Thus 10.10012 = 2.5312510   
+
+Decima to octal 
+
+i> Integer decimal to octal 
+
+To convert the integer decimal to octal numbers, the following steps are followed:  
+
+A> Divide the given decimal number by “8”, where it gives the result along with the remainder. 
+
+ 
+
+ 
+
+ 
+
+B> The division is done till we get the quotient 0. 
+
+C> From the division we will get remainder and the remainder is arranged moving from bottom to top. Hence, we got our result 
+
+For example: 
+
+12710 to ?8  
+
+Solution:  
+
+127/8= 15(remainder=7) 
+
+5/8= 1(remainder=7) 
+
+2/8= 0(remainder=1) 
+
+Since the quotient is zero now, no more division can be done. So, by taking the remainders in reverse order, we get the equivalent octal number. 
+
+Hence, (127)10 = (177)8 
+
+ii> Fractional decimal to octal 
+
+A> Divide the given integer part of the fractional decimal number by “8”, where it gives the result along with the remainder. For the integer part same above procedure is followed 
+
+  
+
+ 
+
+ 
+
+B> Now for the decimal part, we simply multiply it with 8 and from the multiplication result, we will pick out the integer part. 
+
+C> The same process of step B is followed for some number of lines depending upon the accuracy that we want (assume2 digit after decimal), and the result is obtained by arranging the separated digit of integer part in the order of top to bottom. 
+
+ For example: 
+
+169.55410 to ?8 
+
+Solution:  
+
+For the integer part 
+
+169/8 = 21(remainder=1) 
+
+21/8 = 2(remainder=5) 
+
+2/8 = 0(remainder=2) 
+
+For the fractional part 
+
+0.554*8=4.432 -->4 
+
+0.432*8=3.456 -->3 
+
+0.456*8=3.648-->3 
+
+0.648*8=5.184-->5 
+
+ 
+
+ 
+
+Thus 169.55410 = 251.43358 
+
+Octal to decimal 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
