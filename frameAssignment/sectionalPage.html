@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Page</title>
+</head>
+
+<frameset rows="10%,*,10%" noresize>
+    <!-- <frameset rows="1*,8*,1*"> can also be done to divide the page in to the ratio of 1:8:1 horizontally -->
+    <frame name="Navbar" src="topNavbar.html">
+
+        <frameset cols="19%,*">
+            <frame name="smallColumn" src="col1.hmtl">
+                <frame name="bigColumn" src="col2.html">
+        </frameset>
+
+        <frame name="Footer" src="footer.html">
+</frameset>
+
+<noframes>Sorry!!! your browser doesn't support the frames </noframes>
+
+</html>
