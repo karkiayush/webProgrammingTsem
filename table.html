@@ -5,16 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        tables
+    </title>
 </head>
 
 <body>
+    <table border="border">
+        <!-- finally wrapped with <thead></thead> -->
+        <thead>
+            <tr>
+                <th>S.N.</th>
+                <th>Subjects</th>
+                <th>No.of passed students</th>
+                <th>No.of failed students</th>
+            </tr>
+        </thead>
 
-    <!-- del is for the deleted text or content  -->
-    <!-- mark is for marking some special text  -->
-    <!-- <ins> is for inserting anything which will be represented by underline underneath the content </ins> -->
-    <p>Lorem ipsum dolor <del> sit amet</del> <ins>consectetur</ins> adipisicing <mark>elit.</mark> <mark>lorem</mark>
-        amet.</p>
+        <!-- finally wrapped with <tbody></tbody> -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Web Programming</td>
+                <td>20</td>
+                <td>22</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Java Programming</td>
+                <td>25</td>
+                <td>23</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Advance Networking</td>
+                <td>29</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>subjects = 3</td>
+                <td>passed students = 74</td>
+                <td>failed students = 66</td>
+            </tr>
+        </tfoot>
+
+    </table>
 </body>
 
 </html>
