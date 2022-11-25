@@ -1,0 +1,19 @@
+body {
+  background-color: white;
+}
+
+table {
+  text-align: center;
+}
+
+#yellow {
+  background-color: rgb(223, 223, 149);
+}
+
+#blue {
+  background-color: rgb(156, 156, 235);
+}
+
+#green {
+  background-color: rgb(156, 235, 160);
+}

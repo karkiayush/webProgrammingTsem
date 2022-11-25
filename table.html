@@ -8,9 +8,24 @@
     <title>
         tables
     </title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 4px solid black;
+        }
+
+        body {
+            background-color: grey;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- <colgroup> tag specifies a group of one one or more columns in a table for formatting </colgroup>
+
+        To define properties to a column within a <colgroup>, use the <col> tag within the <colgroup> tag
+    -->
     <table border="border">
         <!-- finally wrapped with <thead></thead> -->
         <thead>
@@ -46,6 +61,7 @@
             </tr>
         </tbody>
 
+        <!-- wrapped with table footer  -->
         <tfoot>
             <tr>
                 <td>Total</td>
