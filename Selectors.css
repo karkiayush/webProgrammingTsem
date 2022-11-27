@@ -1,0 +1,46 @@
+@font-face {
+  font-family: firacode;
+  src: url(./fonts/FiraSans.ttf);
+  font-style: italic;
+}
+
+body {
+  background-color: white;
+}
+.multiplename {
+  background-color: #f1d3b3;
+  font: 20px Georgia, "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-family: firacode;
+}
+
+h2:hover {
+  background-color: #61764b;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 500;
+}
+
+a:hover {
+  background: #285430;
+  border-radius: 3px;
+}
+
+a:visited {
+  color: #003865;
+}
+
+div {
+  background-color: #6c4ab6;
+  height: 40px;
+  text-align: center;
+}
+#fastforward:hover {
+  background-color: #ba94d1;
+}

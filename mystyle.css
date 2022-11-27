@@ -1,0 +1,89 @@
+  p{
+    font-family: Arial Helvetica Tahoma 'Times New Roman';
+    /*
+    Generic fonts:
+      serif             Times New Roman, Garamond, Bookman Old
+      sans-serif        Arial, Helvetic, Tahoma, Palatino
+      monospace         Courier New, Consolas, Prestige
+      cursive           Caflish script, zapf-chancery
+      fantasy           Critler, Cottonwood
+    
+    */
+      
+    
+    font-size: 1.1em; /* mm cm px pc pt em ex % */
+    /* xx-small x-small small medium large x-large xx-large */
+    
+    /* font-variant: small-caps;
+     normal (default) */
+    
+    font-style: italic; /* oblique normal(default) */
+    
+    font-weight: bold; /* lighter bolder normal (default) */
+    /* 100 200 300 400 (normal) 500 600 700 (bold) 800 900 */
+  }
+
+
+
+#style1{
+  /* Font shorthand */
+  
+  font: small-caps bold 1.5em Garamond; /* second last=font-size, last=font-family */
+  
+  text-decoration: line-through underline overline; /* default = none */
+  
+  letter-spacing: 16pt; /* default = normal */
+  word-spacing: 50pt; /* default = normal */
+  line-height: 80pt; /* default = normal */
+  
+  
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline overline;
+  color: #FF0000;
+  background-color: blue;
+}
+
+
+a:visited{
+  color: #FFFF00;
+}
+
+ol{
+  list-style-type: upper-roman;
+}
+
+ol ol
+{
+  list-style-type: lower-greek;
+}
+
+ol ol ol
+{
+  list-style-type: lower-alpha;
+}
+
+ul{
+  list-style-type: circle;
+}
+
+ul ul{
+  list-style-type: square;
+}
+
+ul ul ul
+{
+  /* list-style-type: disc; */
+  
+  list-style-image: url("aero.png"); /* try font awesome */
+}
+
+
+/* a:active */
