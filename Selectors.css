@@ -2,6 +2,12 @@
   font-family: firacode;
   src: url(./fonts/FiraSans.ttf);
   font-style: italic;
+
+  font-family: acme;
+  src: url(./fonts/Acme.ttf);
+
+  src: url(fonts/PtsansRegular.ttf);
+  font-family: ptsans;
 }
 
 body {
@@ -10,6 +16,7 @@ body {
 .multiplename {
   background-color: #f1d3b3;
   font: 20px Georgia, "Times New Roman", Times, serif;
+  font-family: ptsans;
 }
 
 h2 {
@@ -25,6 +32,7 @@ a {
   text-decoration: none;
   font-size: larger;
   font-weight: 500;
+  margin: 30px;
 }
 
 a:hover {
@@ -40,7 +48,12 @@ div {
   background-color: #6c4ab6;
   height: 40px;
   text-align: center;
+  font-family: acme;
 }
 #fastforward:hover {
   background-color: #ba94d1;
+}
+
+p {
+  font-family: ptsans;
 }
