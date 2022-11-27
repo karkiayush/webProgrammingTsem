@@ -1,0 +1,32 @@
+/* %, vw, vh  */
+
+/* % is used for the determenation of the width and height of any part relative(with respect to) parent  */
+
+/* vw(view width): It is the unit that is an absolute unit and it takes the width respect to the width of the device screen, irrespective of its parent. For example :
+    If we give the width of the main(i.e parent) as 50 vw, it takes the size exact half of the screen size.
+    
+    Similarly, if the width of the section(i.e child of the main) is 75vw, it takes the size 75 of the whole screen size unlike the % which is relative*/
+
+/* Relative unit  */
+main {
+  border: 4px solid black;
+  width: 50%;
+}
+
+section {
+  border: 3px solid lightgreen;
+  width: 50%;
+}
+
+/* Absolute Unit  */
+div {
+  margin-top: 10vh;
+  border: 5px dotted red;
+  width: 50vw;
+}
+
+#vwunit {
+  margin-left: 2vh;
+  border: 5px solid black;
+  width: 75vw;
+}
