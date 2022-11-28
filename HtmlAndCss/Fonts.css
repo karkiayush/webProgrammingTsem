@@ -1,0 +1,11 @@
+h1 {
+  /* vshadow, hshadow and the blur  */
+  text-shadow: 1px 1.5px 4px rgb(49, 183, 228);
+  font-family: cursive;
+}
+
+p {
+  font-family: Garamond, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
