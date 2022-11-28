@@ -1,4 +1,6 @@
-/* %, vw, vh  */
+/* %, vw, vh  
+Relative units : %, em=16px, rem(root em)
+Absolute units : vh, vw, px */
 
 /* % is used for the determenation of the width and height of any part relative(with respect to) parent  */
 
@@ -7,15 +9,29 @@
     
     Similarly, if the width of the section(i.e child of the main) is 75vw, it takes the size 75 of the whole screen size unlike the % which is relative*/
 
-/* Relative unit  */
+/* Relative unit  
+rem: root em that means the fontsize will be taken in respect of the root*/
 main {
   border: 4px solid black;
   width: 50%;
 }
 
+header {
+  font-size: 1em;
+}
+/* 
+This below section and remunit selector demonstrate the em and rem unit. 
+
+Here although the section which is the parent of the paragraph is using the 2em font size , but the paragraph is using the 1rem means 1em w.r.t the root i.e html   */
 section {
   border: 3px solid lightgreen;
   width: 50%;
+  font-size: 2em;
+}
+
+/* rem  */
+#remunit {
+  font-size: 1rem;
 }
 
 /* Absolute Unit  */

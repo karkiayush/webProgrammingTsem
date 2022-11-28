@@ -1,0 +1,47 @@
+/* Universal selector  */
+* {
+  background-color: grey;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: rgb(159, 86, 195);
+}
+
+/* element selector  */
+header {
+  color: cyan;
+}
+
+/* id selector  */
+#Element {
+  color: greenyellow;
+}
+
+/* class selector  */
+.id {
+  color: rgb(230, 129, 61);
+}
+
+p.id {
+  background-color: powderblue;
+  color: black;
+}
+
+/* class selector  */
+.highlight:hover {
+  background-color: lightgreen;
+}
+
+/* Grouping selector  */
+#Element,
+#group {
+  border: 2px solid black;
+  font-family: monospace;
+}
+
+/* Nested selector  */
+#Element > p {
+  color: blue;
+}

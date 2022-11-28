@@ -1,0 +1,67 @@
+<!-- TYPES OF SELECTOR
+
+1. SIMPLE SELECTORS
+    a.element Selector
+    b.class Selector
+    c.id Selector
+2.UNIVERSAL SELECTOR:
+3.GROUPING SELECTOR
+4.NESTED SELECTOR 
+-->
+
+<!-- SPECIFICITY ORDER 
+    id>class> element
+
+There is also an important rule, That is used to add more priority to the
+property than normal.
+NOTE: Do not use it unless you absolutely have to. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectorCS</title>
+
+    <link rel="stylesheet" href="Selector1.css">
+</head>
+
+<body>
+    <header>
+        <h2>Selector in HTML</h2>
+    </header>
+
+    <main>
+        <article id="Element">
+            <h3>i. Element Selector</h3>
+            <p>Element selector selects the HTML elements based on the element name.</p>
+        </article>
+
+        <article class="id">
+            <h3>ii. ID Selector</h3>
+            <p>Id selector uses the id attribute of an HTML element to select a specific element.
+                The ID of an element is unique within a page.Hence the ID selecotor is used to select only one
+                unique
+                element using the #followed by ID name.
+            </p>
+        </article>
+        <article class="id" id="group">
+            <h3>iii. Class Selector</h3>
+            <p class="id highlight">The class selector selects HTML elements with a specific value of the class
+                attribute. It uses
+                the
+                .class_name{} for accessing the class. Also class is not unique that means mulitple elements can use
+                the
+                same class name.
+                <br>
+                <em>
+                    NOTE: A html element can have more than one class.
+                </em>
+            </p>
+        </article>
+    </main>
+</body>
+
+</html>
