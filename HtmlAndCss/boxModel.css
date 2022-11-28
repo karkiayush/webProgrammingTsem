@@ -1,0 +1,12 @@
+.box {
+  border: 8px solid blueviolet;
+  height: 50px;
+  /* text and border bichko space  */
+  /* Padding seperates the content from the border  */
+  padding: 20px 40px 30px 60px;
+
+  /* Screen and box ko space  */
+  /* Margin separates one content from another content  */
+  margin-left: 20px;
+  margin-right: 15px;
+}
