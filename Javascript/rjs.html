@@ -1,0 +1,45 @@
+<!-- write a a js using window function sto compute the roots of a quadratic equation(ax^2+bx+c)=0
+The script should check the value of discriminant for nrgatine value and the user if he/she still wants to compute the root despite being xomplex and do accordingly -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic JavaScript</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function show(v) {
+            document.write(v, "<br>");
+        }
+        var a = window.prompt("Enter the value of a:");
+        var b = window.prompt("Enter the value of b:");
+        var c = window.prompt("Enter the value of c:");
+        show("The value of a is:" + a);
+        show("The value of b is:" + b);
+        show("The value of c is:" + c);
+        //show(a);
+        let d = (Math.pow(b, 2) - 4 * a * c);
+        //show(d);
+        if (d >= 0) {
+            document.write("Roots obtained are real ");
+            var x1 = -b + Math.sqrt(d) / (2 * a);
+            var x1 = -b - Math.sqrt(d) / (2 * a);
+            show("The value of x1 is:" + x1.toFixed(2));
+            show("The value of x2 is:" + x2.toFixed(2));
+        }
+        else {
+            docbument.write("Roots obtained are imaginary :");
+            var rp = (-b / 2 * a);
+            var ip = Math.abs(Math.sqrt(Math.abs(d)) / (2 * a));
+            show(rp, "+", ip, "i");
+            show(rp, "-", ip, "i");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,6 +1,6 @@
-document.write(document.getElementById("pi").innerHTML = Math.PI);
+document.getElementById("pi".innerHTML = LN10);
 
-document.write(getElementById("eulers").innerHTML = Math.E);
+// document.write(document.getElementById("eulers").innerHTML = Math.E);
 
 // document.write(getElementById("sqrt").innerHTML = Math.sqrt2);
 

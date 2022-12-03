@@ -12,23 +12,68 @@
         }
     </style>
     <title>maths in js</title>
+
+
 </head>
 
 <body>
     <h1 style="text-align:center">Maths in JavaScript</h1>
 
-    <p id="pi"></p>
+    <!-- <p id="pi"></p> -->
 
 
-    <p id="eulers"></p>
+    <!-- <p id="eulers"></p>
     <p id="sqrt"></p>
     <p id="sqrtf"></p>
 
-    <p id="logarithm"></p>
+    <p id="logarithm"></p> -->
 
 
-    <script src="math.js"></script>
+    <!-- <script src="math.js"></script> -->
+    <script>
+        //CEIL gives the upper value of the fractional number
+        var a = Math.ceil(5.005);
+        var b = Math.ceil(5.1112);
+        document.write(a, b);
+        document.write("\n");
 
+        // FLOOR: return the nearest lower value 
+        document.write("The floored value is: ", Math.floor(2.9));
+
+
+        document.write(br(), "The second floored value is: ", Math.floor(-2.9));
+
+        function br() {
+            document.write("<br/>");
+        }
+
+        // round : gives the nearest value i.e if value is >.5, gives the upper value and if the value is <.5 gives the lower value 
+        document.write("<br/>", Math.round(4.51));
+
+        // TRUNC : removes the value after decimal
+        document.write("<br/>", Math.trunc(4.51));
+
+        // MAXM AND MIN 
+        document.write("<br/>", Math.max(4.51, 3, 2, 1, 4.9)); document.write("<br/>", Math.min(4.51, 3, 2, 1, 4.9));
+
+        // SQRT & CBRT 
+        document.write("<br/>", Math.sqrt(9));
+        document.write("<br/>", Math.cbrt(8));
+
+        // POW & RANDOM, ABS AND PI 
+        var t = Math.pow(3, 2);
+        document.write("<br/>", t);
+
+        // produce the random value between 0 to 1 when no input is feed 
+        var rand = Math.random();
+        document.write("<br/>", rand);
+        // producing the random value ranging from 0 to 100.Also here 1 is added such that upto 100 is the range
+        var randranged = Math.round((Math.random() * 100) + 1)
+        document.write("<br/>", randranged);
+
+        // return the value in radian 
+        document.write("<br/>", Math.atan(1));
+    </script>
 </body>
 
 </html>
