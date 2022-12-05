@@ -16,13 +16,96 @@
 
 <body>
     <script>
+        //line breaking function
+        function nl() {
+            document.write("<br/>");
+        }
         var uid = 'avbcdx1234';
         uid = 'qwerty234567';
-        document.write(uid);//can't display in local host
+        document.write(uid);
 
-        var name = prompt("Enter your name");
-        
-        document.write("Name of the user is: ", name);
+        var name = prompt("name: ");
+        var uid = prompt("uid: ");
+        var email = prompt("email: ");
+
+        // Don't know why browswer is showing undefined while fun call 
+        document.write(nl(), "Name: ", name);
+        document.write(nl(), "uid: ", uid);
+        document.write(nl(), "email: ", email);
+
+
+        //DISPALYING ALL OF THE INFOS BY SINGLE DOCUMENT.WRITE 
+        document.write("<hr/>");
+        document.write("Displaying all of the infos in single write</br>");
+
+        document.write(`
+        Name: ${name}
+        <br/>Uid: ${uid}
+        <br/>Email:${email}
+        `);
+
+        // Revising taught things 
+        var names = new Array();
+        var range = prompt("how many names do you wanna give : ");
+        for (var i = 0; i < range; i++) {
+            name[i] = prompt(`Name ${i + 1}:`);
+        }
+
+        for (var i = 0; i < range; i++) {
+            document.write(`<br/>Name ${i + 1}: ${name[i]}`);
+        }
+
+
+        // self defined array 
+        var roll = new Array();
+        roll[0] = 11; roll[3] = 33;
+        // simple for loop 
+        for (var i = 0; i < 4; i++) {
+            document.write("<br/>", roll[i]);
+        }
+        //for in loop eleminates the undefined
+        for (var j in roll) {
+            document.write("<br/>", j);
+            document.write("\n", roll[j]);
+        }
+
+        //stack 
+        var stackArray = [1, 2, 3, 4, "joe", "mike", "lonely"];
+
+
+
+
+
+        //LIFO
+        var stackArray = new Array();
+        stackArray.push(101);
+        stackArray.push(102);
+        stackArray.push(103);
+
+        var x = stackArray.pop();
+        var y = stackArray.pop();
+        var z = stackArray.pop();
+        var w = stackArray.pop();
+
+        out(x);
+        out(y);
+        out(z);
+        out(w);
+
+
+
+        out("OUTPUT FROM QUEUE ARRAY")
+        // FIFO 
+        var queueArray = [101, 102, 103];
+        var x = queueArray.shift();
+        out(x);
+        var y = queueArray.shift();
+        out(y);
+        // Adding the data to the beginning of the array 
+        queueArray.unshift(9000);
+        out(queueArray[0]);
+        queueArray.unshift("joe", 12, 112, 22);
+        out(queueArray[0]);
     </script>
 </body>
 

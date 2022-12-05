@@ -1,0 +1,88 @@
+<!DOCTYPE.html>
+  <html lang="en">
+
+  <head>
+    <title> Hello world </title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+      function out(v) {
+        document.writeln(v, "<br>");
+      }
+
+      var ages = new Array();
+      ages[0] = 55; //out(ages.length);
+      ages[1] = 77; //out(ages.length);
+      ages[5] = 23; //out(ages.length);
+
+      ages[6] = "fifty"; //out(ages.length);
+
+      for (var i = 0; i < ages.length; i++) {
+        out(ages[i]);
+      }
+
+      out("<hr>");
+      for (var j in ages) {
+        out(j);
+        out(ages[j]);
+      }
+
+      // objects 
+      var myCar = { make: "Honda", model: "civic" };
+
+      // array 
+      var weights = [1, 2, 33, "seventy", true, myCar];
+
+      out("<hr>");
+      for (var k in weights) {
+        if (typeof (weights[k]) != "object")
+          out(weights[k]);
+        else
+          // document.write("<br/>else")
+          for (var l in weights[k]) {
+            out(weights[k][l]);
+          }
+      }
+
+
+
+      out("<hr>");
+
+      //LIFO
+      var stackArray = new Array();
+      stackArray.push(101);
+      stackArray.push(102);
+      stackArray.push(103);
+
+      var x = stackArray.pop();
+      var y = stackArray.pop();
+      var z = stackArray.pop();
+      var w = stackArray.pop();
+
+      out(x);
+      out(y);
+      out(z);
+      out(w);
+
+
+
+      out("OUTPUT FROM QUEUE ARRAY")
+      // FIFO 
+      var queueArray = [101, 102, 103];
+      var x = queueArray.shift();
+      out(x);
+      var y = queueArray.shift();
+      out(y);
+      // Adding the data to the beginning of the array 
+      queueArray.unshift(9000);
+      out(queueArray[0]);
+      queueArray.unshift("joe", 12, 112, 22);
+      out(queueArray[0]);
+      //-->
+    </script>
+  </body>
+
+  </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE.html>
+<html lang = "en">
+<head>
+<title> Hello world </title>
+<meta charset = "utf-8" />
+</head>
+  <body>
+
+    <script type = "text/javascript">
+      <!--
+      function out(v){
+        document.writeln(v, "<br>");  
+      }
+        
+      
+      // using constructor
+      
+      /*function dispCar(){
+            document.writeln("Make :", this.make, "<br>");
+            document.writeln("Model:", this.model, "<br>");
+        }*/
+      
+      function CAR(theMake, theModel) {
+        this.make  = theMake;
+        this.model = theModel;
+        /*this.display =  function(){
+            document.writeln("Make :", this.make, "<br>");
+            document.writeln("Model:", this.model, "<br>");
+        }*/
+      }
+      
+      var myCar = new CAR("Hyundai", "i20");
+      //var hisCar = new CAR("Ford", "Figo");
+      
+      //myCar.display();
+      //hisCar.display();
+      
+      for(var v in myCar){
+        document.writeln(v + ": ");  
+        document.writeln(myCar[v] + "<br>");
+      }
+      
+      out(myCar["make"]);  // myCar.make
+      out(myCar["model"]); // myCar.model
+      
+
+    
+      //-->
+    </script>
+  </body>
+</html>
