@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case</title>
+</head>
+
+<body>
+    <script>
+        var input = prompt("Which operation do you wanna perform.press 1 for addition, 2 for subtraction, 3 for division, 4 for multiplication")
+
+        switch (input) {
+            case 1:
+                document.write("addition is gonna be performed");
+                var a = prompt("enter value 1: ");
+                var b = prompt("enter value 2: ");
+                document.write(`Sum: ${a + b}`);
+                break;
+
+            case 2:
+                document.write("subtraction is gonna be performed");
+                var a = prompt("enter value 1: ");
+                var b = prompt("enter value 2: ");
+                var diff = a - b;
+                document.write(`Difference: ${diff}`);
+                break;
+
+            case 3:
+                document.write("Division is gonna be performed");
+                var a = prompt("enter value 1: ");
+                var b = prompt("enter value 2: ");
+                document.write(`Division: ${a / b}`);
+                break;
+
+            case 4:
+                document.write("Multiplication is gonna be performed");
+                var a = prompt("enter value 1: ");
+                var b = prompt("enter value 2: ");
+                document.write(`Division: ${a * b}`);
+                break;
+
+            default:
+                break;
+        }
+    </script>
+</body>
+
+</html>

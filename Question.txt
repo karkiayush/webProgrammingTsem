@@ -1,0 +1,4 @@
+refrence vs calling a function in js 
+list, tuples exists or not in js 
+Functional programming
+Js context 

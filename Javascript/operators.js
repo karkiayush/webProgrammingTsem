@@ -104,3 +104,8 @@ Bitwise operators work on 32 bits numbers.
 >> Right shift
 >>> unsigned right shift
 */
+
+var ip = 799;
+var fp = 199;
+var discount = ((ip - fp) * 100) / 799;
+console.log(`Discount:  ${Math.round(discount)}%`); 
