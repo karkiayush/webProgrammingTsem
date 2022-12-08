@@ -1,0 +1,44 @@
+<!DOCTYPE.html>
+  <html lang="en">
+
+  <head>
+    <title> Hello world </title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      function DoCalc() {
+        var p = document.getElementById("principal").value;
+        var t = document.getElementById("time").value;
+        var r = document.getElementById("rate").value;
+
+        var si = (p * t * r) / 100;
+
+        document.getElementById("SI").value = si;
+
+
+      }
+        //-->
+
+    </script>
+
+
+    <form>
+      <label>Principal</label>
+      <input type="text" id="principal" /> <br>
+
+      <label>Time (in years)</label>
+      <input type="text" id="time" /> <br>
+
+      <label>Annual Rate</label>
+      <input type="text" id="rate" /><br>
+
+      <input type="button" value="Calculate" onclick="DoCalc();" />
+      <input type="text" id="SI" />
+    </form>
+
+
+  </body>
+
+  </html>

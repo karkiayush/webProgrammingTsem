@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        body {
+            background-color: grey;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .events {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .dummy {
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        button {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            border: 2px solid black;
+            border-radius: 6px;
+            background-color: lightgreen;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="mainHeading">JS EVENTS</h1>
+    <p class="events">Some of the events </p>
+    <p>click: <br>
+
+        contextmenu: when we right click the mouse <br>
+
+        mouseover/mouseout: indicates that our mouse is in the element section and out is coming of any element <br>
+
+        mouseup/mousedown: indicates that the mouse is pressed or it is comimg up <br>
+
+        mousemmove: <br>
+        focus <br>
+        submit <br>
+
+    </p>
+
+    <p class="dummy">Dummy Text</p>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, architecto. Reiciendis alias dolor
+        odio
+        consectetur atque. Asperiores cum optio ut odit facilis maiores quis perspiciatis nobis ea error sed assumenda,
+        reiciendis cupiditate voluptatum voluptatibus quaerat eligendi at, dolore est facere. Ratione aperiam facilis,
+        ducimus dolor ipsam temporibus deleniti optio a.</p>
+
+    <!-- button that hides and shows the paragraph content  -->
+    <button id="btn" onclick="toogleHide()">Hide/Unhide</button>
+
+    <script>
+
+        // The JavaScript addEventListener() method allows you to set up functions to be called when a specified event happens, such as when a user clicks a button.This tutorial shows you how you can implement addEventListener() in your code.
+
+        let mainHeading = document.getElementById("mainHeading");
+        mainHeading.addEventListener('mouseover', function show() {
+            alert("Main heading of the page");
+        });
+
+        // for displaying alert message when mouse is hover inside of the para id 
+        let para = document.getElementById("para");
+        para.addEventListener('mouseover', function run() {
+            alert("Mouse is inside the paragraph section");
+        });
+
+
+
+
+        // Function that defines the logic of the hide/show button 
+        function toogleHide() {
+
+            // Below button don't have any work 
+            // let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

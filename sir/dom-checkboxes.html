@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title> table </title>
+  </head>
+  
+  <body>
+    
+    <form id = "vehicleGroup">
+      <input type = "checkbox" name = "vehicles" value = "car" /> Car
+      <input type = "checkbox" name = "vehicles" value = "truck" /> Truck
+      <input type = "checkbox" name = "vehicles" value = "bike" /> Bike
+      <input type = "checkbox" name = "vehicles" value = "lorry" /> Lorry
+
+      <br>
+      <input type = "button" onclick="DoCount();" value="Count" />
+      
+    </form>
+    
+    <script type="text/javascript">
+        
+      function DoCount(){
+        var domvg = document.getElementById("vehicleGroup");
+
+        var count = 0;
+
+        var selectedString = "";
+        for (index = 0; index < domvg.vehicles.length; index++){
+          if (domvg.vehicles[index].checked) {
+            count++;
+            selectedString = selectedString + "\n" +
+                            domvg.vehicles[index].value;
+          }
+        }
+
+        alert(selectedString);
+      }
+
+    </script>
+  
+  </body>
+
+
+</html>

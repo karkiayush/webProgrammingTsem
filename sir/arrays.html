@@ -8,6 +8,7 @@
 
   <body>
 
+    <p id="timer">Date and time : </p>
     <script type="text/javascript">
       function out(v) {
         document.writeln(v, "<br>");
@@ -81,6 +82,41 @@
       out(queueArray[0]);
       queueArray.unshift("joe", 12, 112, 22);
       out(queueArray[0]);
+
+
+
+
+      // array concatenation 
+      var fruits = ['banana', 'papaya'];
+      fruits.concat("guava");
+      fruits.concat(['Kiwi', 'mango']);
+
+      // function looping(arr) {
+      //   for (int i = 0; i < 5; ++)
+      // }
+      //normally concat garda addon hunna. so the orginal array and new array element must be stored in new array
+
+      // combination of the array in single string for ex: we have an array of DOB, we use join and use the delementer like / or - etc
+      var dob = [2022, 12, 01];
+      var dobstring = dob.join('/');
+      document.write("<br/>", dobstring);
+
+      // for dispalying the elements of particular index like (2,4) : including 2 and excluding 4 then we use slice fun()
+
+      // also we can use only 1 para for indicating starting index, the arrray will run from the given index to end of the array
+
+      //reversinng the array, there will be mutation
+
+      // sorting array , use sort fun which sorts in ascending order based in ascii code. Here the sort fun convert the array in string at first and then the sorting is done. FOR SORTING LIKE NUMBERS, use pass the args to the sort fun i.e comparater of any name say "numComp" that does the a-b op in return, and if the value comes out to be negative, smaller. IF o than equal and if +ve the greater
+
+      // summation of x^k,calculate 
+
+      // For the case insensitive sorting
+
+      // for the time 
+      const clock = new Date();
+      document.getElementById("timer").innerHTML = clock;
+
       //-->
     </script>
   </body>

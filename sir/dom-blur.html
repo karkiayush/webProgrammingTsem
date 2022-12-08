@@ -1,0 +1,68 @@
+<!DOCTYPE.html>
+  <html lang="en">
+
+  <head>
+    <title> Hello world </title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background-color: grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      function DoCalc() {
+        var p = document.getElementById("principal").value;
+        var t = document.getElementById("time").value;
+        var r = document.getElementById("rate").value;
+
+        var si = (p * t * r) / 100;
+
+        document.getElementById("SI").value = si;
+
+
+      }
+
+
+      function PrincipalBlur() {
+        //alert("hello");
+        var p = document.getElementById("principal").value;
+
+        var pnum = parseFloat(p);
+
+        if (isNaN(pnum)) {
+
+          document.getElementById("principal").focus();
+          document.getElementById("principal").select();
+        }
+        else {
+          DoCalc();
+        }
+      }
+        //-->
+
+    </script>
+
+
+    <form>
+      <label>Principal</label>
+      <input type="text" id="principal" onblur="PrincipalBlur();" value="0" /> <br>
+
+      <label>Time (in years)</label>
+      <input type="text" id="time" onblur="DoCalc();" value="0" /> <br>
+
+      <label>Annual Rate</label>
+      <input type="text" id="rate" value="0" /><br>
+
+      <input type="button" value="Calculate" onclick="DoCalc();" />
+      <input type="text" id="SI" />
+    </form>
+
+    <a href="#" onclick="DoCalc();">Click Here</a>
+
+
+  </body>
+
+  </html>

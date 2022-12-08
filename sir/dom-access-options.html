@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title> Access to form elements </title>
+  <style>
+    body {
+      background-color: grey;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form name="frmTest" id="frmT" action="">
+    <input type="text" name="txtHello" id="txtH" value="Hello " />
+  </form>
+
+
+  <script type="text/javascript">
+    function Print(v) {
+      document.writeln(v, "<br>");
+    }
+
+    // There are various way of accessing dom elements in HTML 
+    // Different ways of accessing form elements from JavaScript
+
+    Print(document.getElementById("txtH").value);
+
+    Print(document.frmTest.txtHello.value);
+
+    Print(document.forms[0].elements[0].value);
+
+    Print(document.getElementsByName("txtHello")[0].value);
+
+  </script>
+
+</body>
+
+</html>

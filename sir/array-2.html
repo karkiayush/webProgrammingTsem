@@ -1,0 +1,83 @@
+  <!DOCTYPE.html>
+  <html lang = "en">
+  <head>
+  <title> Hello world </title>
+  <meta charset = "utf-8" />
+  </head>
+    <body>
+      <script type = "text/javascript">
+        <!--
+          function PrintArray(arr){
+            for(var v in arr){
+              document.writeln(arr[v], "<br>");
+            }
+          }
+        
+          function Print(v){
+            document.writeln(v, "<br>");
+          }
+        
+          function NumComp(a, b){
+            return a - b;
+          }
+        
+          function StringCompNoCase(a, b){
+            var a_lower = a.toLowerCase();
+            var b_lower = b.toLowerCase();
+            
+            return a_lower.localeCompare(b_lower);
+          }
+          
+          var DOB = [1980, 2, 29];
+          var DOBstring = DOB.join("/");
+          Print(DOBstring);
+        
+          var fruits = ["banana", "apple", "orange", "mango"];
+          fruits = fruits.concat("kiwi");
+          fruits = fruits.concat(["watermelon", "Grapes"]);
+        
+          PrintArray(fruits);
+        
+          someFruits = fruits.slice(2, 4);
+        
+          Print("<hr>");
+          PrintArray(someFruits);
+        
+          otherFruits = fruits.slice(2);
+          Print("<hr>");  
+          PrintArray(otherFruits);
+          
+          Print("<hr>");   
+          fruits.reverse();
+          PrintArray(fruits);
+        
+          Print("<hr>");   
+          fruits.push("dragon fruit");
+          PrintArray(fruits);
+        
+          
+          Print("<hr>");   
+          fruits.sort();
+          PrintArray(fruits);
+        
+          Print("<hr>"); 
+          var ages = [1, 2, 101, 1001, 1100, 20, 30, 301, 9999];
+          ages.sort();
+          PrintArray(ages);
+        
+        
+          Print("<hr>"); 
+          var ages2 = [1, 2, 101, 1001, 1100, 20, 30, 301, 9999];
+          ages2.sort(NumComp);
+          PrintArray(ages2);
+        
+        
+          var fruits3 = ["banana", "Grapes", "apple", "Avocado", "orange", "mango"];
+          fruits3.sort(StringCompNoCase);
+          Print("<hr>");
+          PrintArray(fruits3);
+              
+      //-->
+      </script>
+    </body>
+</html>
