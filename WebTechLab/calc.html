@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: grey;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <title>Calculator </title>
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+
+    <form action="">
+        <label for="principle">Principal: </label>
+        <input type="text" id="principle" name="principle"><br>
+
+        <label for="rate">Rate: </label>
+        <input type="text" id="rate" name="rate"><br>
+
+        <label for="time">Time: </label>
+        <input type="text" id="time" name="time"><br>
+
+        <input type="button" value="calculate" onclick="caculator()">
+
+        <input type="text" id="output">
+    </form>
+
+
+    <script type="text/javascript">
+        function caculator(data) {
+            // var p = document.getElementById("principle").value;
+
+            // var r = document.getElementById("rate").value;
+            // var t = document.getElementById("time").value;
+
+            // var operation = (p * t * r) / 100;
+            // document.getElementById("output").value = operation;
+
+            function principalblur() {
+
+            }
+            var p = document.getElementById("principle").value;
+
+            var r = document.getElementById("rate").value;
+            var t = document.getElementById("time").value;
+
+            var operation = (p * t * r) / 100;
+            document.getElementById("output").value = operation;
+        }
+    </script>
+</body>
+
+</html>
