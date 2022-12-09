@@ -1,0 +1,23 @@
+body {
+  background-color: grey;
+}
+.container {
+  width: 800px;
+  height: 700px;
+  border: 4px solid black;
+  overflow: auto;
+}
+
+.firstImage {
+  float: right;
+}
+.secondImage {
+  float: left;
+}
+.topContainer {
+  border: 4px solid lightgreen;
+  /* overflow: auto; */
+}
+.secondPara {
+  clear: right;
+}

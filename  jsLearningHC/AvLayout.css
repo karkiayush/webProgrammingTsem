@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: grey;
+}
+
+nav {
+  background-color: rgb(255, 157, 0);
+  padding-top: 20px;
+  height: 50px;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+  font-weight: 550;
+  margin-left: 40px;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
