@@ -1,0 +1,53 @@
+<!-- to use Flex, we need one container and its children. 
+thus there are 2 properties.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .container {
+            height: 600px;
+            /* width: 600px; */
+            border: 6px solid lightseagreen;
+            display: flex;
+            /* by default the flex will be done in the direction of main axix(horizontal), But if we wanna change the direction of the flex, then we can use the flex-direction prop */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            flex-wrap: wrap;
+            /*automatically breaks the line if the screen size is  small */
+        }
+
+        .box {
+            border: 3px solid black;
+            width: 80px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+</body>
+
+</html>
