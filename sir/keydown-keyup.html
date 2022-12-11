@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: grey;
+    }
+  </style>
+  </body>
+</head>
+
+<body>
+
+  <!-- keydown indicates that as soon as the key is downed, the event will be called. That means the when we press any kind of input, at first the script will run and then only the input will be stored in the memory. similary while erasing using backspace, the script will be fired up, since the backspace will also be considered as the character and also other key are considered as the character-->
+
+  <!-- keyup works when we give the single character or input once and accepts the entered value and run the further step-->
+
+
+  <!-- onkeypress  -->
+
+  <p>Press and hold down a key inside the text field to set a red background color. Release the key to set a green
+    background color.</p>
+
+
+  <input type="text" id="demo" onkeydown="keydownFunction()" onkeyup="keyupFunction()"
+    onblur="document.getElementById('demo').style.backgroundColor = 'white';">
+
+  <script type="text/javascript">
+    function keydownFunction() {
+      document.getElementById("demo").style.backgroundColor = "red";
+    }
+
+    function keyupFunction() {
+      document.getElementById("demo").style.backgroundColor = "green";
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- 
+Detect the unicode value of pressed key
+-->
+<html>
+<body>
+
+<h1>The Keyboard Event: Keydown</h1>
+<h2>Allow only digits</h2>
+
+
+<input type="text" size="40" onkeypress="myFunction(event);">
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction(event) {
+  let charval = event.which;
+  
+  if(charval < 48 || charval > 57){
+    event.preventDefault(); // cancel the event (keystroke)
+  }
+}
+</script>
+
+</body>
+</html>

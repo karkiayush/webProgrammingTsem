@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> table </title>
+  <style type="text/css">
+    
+    #relPos{
+      position:relative;
+      top: 100px;
+      left:100px;
+      z-index:1; //* priority when stacking or overlapping */
+    }
+    
+    #absPos{
+      color: rgb(200, 200, 10, 1);
+      font-size: 2em;
+      position: absolute;
+      top: 100px;
+      left:100px;
+      z-index:0;
+      
+      
+    }
+    
+    
+    
+  
+  </style>
+</head>
+  
+  <body>
+    <h1>Relative Positioning</h1>
+    
+        <p id="relPos">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Venenatis tellus in metus vulputate eu. Mi sit amet mauris commodo quis imperdiet massa. Et leo duis ut diam quam. In dictum non consectetur a erat nam at. Fermentum dui faucibus in ornare. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Lobortis mattis aliquam faucibus purus. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Sed felis eget velit aliquet sagittis id.
+    </p>
+    
+    
+        <p id="absPos">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    </p>
+    
+
+    
+
+    
+    
+    
+    <form>
+    
+    <input type="text" id="left" value="0" /> <br>
+    <input type="text" id="top" value="0" /> <br>
+    <input type="button" value="Move Absolute" onclick="MoveAbs();" /> <br>
+    <input type="button" value="Move Relative" onclick="MoveRel();" />  
+
+    </form>
+    
+    <script type="text/javascript">
+    
+      function MoveAbs()
+      {
+        document.getElementById("absPos").style.left = 
+          document.getElementById("left").value + "px";
+        
+        document.getElementById("absPos").style.top = 
+          document.getElementById("top").value + "px";
+        
+      }
+      
+      function MoveRel()
+      {
+        document.getElementById("relPos").style.left = 
+          document.getElementById("left").value + "px";
+        
+        document.getElementById("relPos").style.top = 
+          document.getElementById("top").value + "px";
+        
+      }
+    
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE.html>
+<html lang = "en">
+<head>
+<title> Hello world </title>
+<meta charset = "utf-8" />
+</head>
+  <body>
+    
+    <form>
+    
+    Full Name :    <input type="text" id="name"  onmouseover="helpFn(1);" onmouseout="helpFn(0);"/> <br>
+    Affiliation :  <input type="text" id="name"   onmouseover="helpFn(2);" onmouseout="helpFn(0);"/> <br>
+    Education :    <input type="text" id="name"   onmouseover="helpFn(3);" onmouseout="helpFn(0);"/> <br>
+
+    </form>
+    
+    <div id="helpText">Help!</div>
+    
+    
+    
+
+    <script type = "text/javascript">
+      function helpFn(num)
+      {
+        var helpText = 
+            ["Help!",
+              "Please enter your fullname in following format: First Name Middle Name LastName",
+              "Please enter where your work or study currently",
+              "Your highest education level"
+            ]
+        
+        var helpColors = ["white", "red", "green", "blue"];
+        
+        var helpdom = document.getElementById("helpText");
+        
+        helpdom.innerHTML = helpText[num];
+        helpdom.style.backgroundColor = helpColors[num];
+        
+      }
+      
+
+      
+    </script>
+  </body>
+</html>

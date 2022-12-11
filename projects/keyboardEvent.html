@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .card {
+            border: 4px solid black;
+            height: 500px;
+            width: 500px;
+            background-color: white;
+            /* to center the div  */
+            margin: auto;
+            border-radius: 12px;
+        }
+
+        .labelFont {
+            font-size: 20px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Color Changing Card</h1>
+    <div class="card" id="Card">
+
+        <!-- for the keydown  -->
+        <p class="labelFont">
+            <label for="keydown">Keydown: </label>
+            <input type="text" id="keydown" onkeydown="keydown()"
+                onblur="document.getElementById('Card').style.backgroundColor='white'"><br>
+        </p>
+
+        <!-- for keyup  -->
+        <p class="labelFont">
+            <label for="keyup">Keyup: </label>
+            <input type="text" id="keyup" onkeyup="keyup()"
+                onblur="document.getElementById('Card').style.backgroundColor='white'"><br>
+        </p>
+
+        <!-- for onkeypress  -->
+        <p class=" labelFont">
+            <label for="onkeypress">Onkey press: </label>
+            <input type="text" id="onkeypress" onkeypress="keypress()"
+                onblur="document.getElementById('Card').style.backgroundColor='white'"><br>
+        </p>
+    </div>
+
+    <!-- for the main color changing logic  -->
+    <script>
+        function keydown() {
+            var color = document.getElementById('keydown').value;
+            document.getElementById("Card").style.backgroundColor = color;
+        }
+        function keyup() {
+            var color = document.getElementById('keyup').value;
+            document.getElementById("Card").style.backgroundColor = color;
+        }
+        function keypress() {
+            var color = document.getElementById('onkeypress').value;
+            document.getElementById("Card").style.backgroundColor = color;
+        }
+    </script>
+</body>
+
+</html>
