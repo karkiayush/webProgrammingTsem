@@ -1,0 +1,38 @@
+body {
+  background-color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  border: 4px solid black;
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  /* to center the div  */
+  margin: auto;
+  border-radius: 12px;
+}
+
+/* .labelFont {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 60px;
+  margin-left: 20px;
+
+   margin: 4px 0px 4px 0px; 
+} */
+
+#labeltext {
+  font-weight: bold;
+  font-size: larger;
+  margin-left: 40px;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  margin: 0px 0px 4px 200px;
+}

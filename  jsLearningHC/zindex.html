@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index</title>
+    <style>
+        body {
+            background-color: grey;
+            color: rgb(223, 206, 108);
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .container {
+            border: 4px solid black;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+        }
+
+        .Divs {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .container1 {
+            height: 300px;
+            width: 300px;
+            background-color: purple;
+            text-align: center;
+            margin: auto;
+        }
+
+        .container2 {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(29, 113, 29);
+            text-align: center;
+            margin: auto;
+        }
+
+        .container3 {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(195, 21, 21);
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Z Index</h1>
+    <p>z index is the css property that helps in positioning of any element or pic or anything a head of others</p>
+
+    <!-- creating a div inside where 3 divs are present  -->
+    <div class="container">
+
+        <!-- first div  -->
+        <div class="container1">
+            <p class="Divs" id="fdiv">First Div</p>
+        </div>
+
+        <!-- second div  -->
+        <div class="container2">
+            <p class="Divs" id="sdiv">Second Div</p>
+        </div>
+
+        <!-- third div  -->
+        <div class="container3">
+            <p class="Divs" id="tdiv">Third Div</p>
+        </div>
+    </div>
+</body>
+
+</html>
