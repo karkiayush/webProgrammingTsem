@@ -1,3 +1,4 @@
+<!-- Higher the value of the z index more focused will be the element or item  -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,53 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zindex.css">
     <title>z index</title>
-    <style>
-        body {
-            background-color: grey;
-            color: rgb(223, 206, 108);
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        .container {
-            border: 4px solid black;
-            height: 500px;
-            width: 500px;
-            margin: auto;
-        }
-
-        .Divs {
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .container1 {
-            height: 300px;
-            width: 300px;
-            background-color: purple;
-            text-align: center;
-            margin: auto;
-        }
-
-        .container2 {
-            height: 300px;
-            width: 300px;
-            background-color: rgb(29, 113, 29);
-            text-align: center;
-            margin: auto;
-        }
-
-        .container3 {
-            height: 300px;
-            width: 300px;
-            background-color: rgb(195, 21, 21);
-            text-align: center;
-            margin: auto;
-        }
-    </style>
 </head>
 
 <body>
@@ -59,23 +15,41 @@
     <p>z index is the css property that helps in positioning of any element or pic or anything a head of others</p>
 
     <!-- creating a div inside where 3 divs are present  -->
+    <p id="instruction">Click the left button of mouse to increase the z-index value of the particular div(element)</p>
     <div class="container">
 
         <!-- first div  -->
-        <div class="container1">
+        <div class="container1" id="con1" onclick="increseIndex('fcont')">
             <p class="Divs" id="fdiv">First Div</p>
         </div>
 
         <!-- second div  -->
-        <div class="container2">
+        <div class="container2" id="con2" onclick="increseIndex('scont')">
             <p class="Divs" id="sdiv">Second Div</p>
         </div>
 
         <!-- third div  -->
-        <div class="container3">
+        <div class="container3" id="con3" onclick="increseIndex('tcont')">
             <p class="Divs" id="tdiv">Third Div</p>
         </div>
     </div>
+
+    <script>
+        function increseIndex(args) {
+            if (args == 'fcont') {
+                document.getElementById('con1').style.zIndex = '40';
+            }
+
+            else if (args == 'scont') {
+                document.getElementById('con2').style.zIndex = '40';
+            }
+
+            else {
+                document.getElementById('con3').style.zIndex = '40';
+            }
+
+        }
+    </script>
 </body>
 
 </html>
