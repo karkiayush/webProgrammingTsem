@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/musicFavicon.png" type="image/x-icon">
+    <title>Music Player</title>
+
+    <!-- cdn file for icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="musicstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="titlemp">Music Player</p>
+        <p class="subtext">Dadhelo lagyo</p>
+
+        <!-- for the rotating image  -->
+        <div class="imgContainer">
+            <img src="dadehloLagyo.jpeg" alt="image loading" class="rotImage">
+        </div>
+
+        <audio src="bipulDadheloLagyo.mp3" controls></audio>
+
+        <!-- making the music controller  -->
+        <div class="music_controls">
+            <!-- previous button  -->
+            <div class="prevnext"><i class="fa-solid fa-backward"></i></div>
+
+
+            <!-- pause & play button  -->
+            <i class="fa-solid fa-circle-play" id="playpause" class="main_button"></i>
+
+            <!-- for next   -->
+            <div class="prevnext">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- main logic i.e Js  -->
+    <script>
+        // query selector directly selects the particular element or tag in js 
+        const music = document.querySelector('audio');
+        const play = document.getElementById("playpause");
+        const img = document.querySelector('img');
+
+        play.addEventListener('click', () => {
+            //callback function
+            music.play();
+
+            play.classList.replace('fa-solid fa-circle-play', 'fa-solid fa-pause');
+
+            img.classList.add('anime');
+
+
+        })
+    </script>
+</body>
+
+</html>

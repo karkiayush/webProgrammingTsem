@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*makes sure that inside of the specified height and width all of the work will be done  */
+}
+
+body {
+  background-color: rgb(172, 161, 161);
+}
+
+.container {
+  position: relative;
+  top: 10px;
+  background: linear-gradient(to top right, #d09cfa, #c0eee4);
+  height: 750px;
+  width: 500px;
+  border-radius: 40px;
+  /* border: 6px solid #B6E2A1; */
+  margin: auto;
+  /* display: grid;
+  place-items: center; it also helps to center the items */
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 0.9rem 0.9rem rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.titlemp {
+  position: relative;
+  top: 15px;
+  text-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.subtext {
+  position: relative;
+  text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.384);
+  top: 20px;
+  font-weight: 100;
+  font-size: 5px;
+}
+
+.rotImage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 50%;
+  object-fit: cover; /*it makes sure that the image takes the complete height and width of the parent div of the img div  */
+}
+
+.imgContainer {
+  position: relative;
+  top: 70px;
+  height: 20rem;
+  width: 20rem;
+  margin: auto;
+}
+
+audio {
+  position: relative;
+  top: 200px;
+}
+
+#playpause {
+  position: relative;
+  top: 40px;
+}
+/* #playpause:hover {
+
+} */
+
+.music_controls {
+  position: relative;
+  top: 5em;
+  margin: auto;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prevnext {
+  position: relative;
+  top: 2.3rem;
+}
+
+/* for the rotating animation  */
+.anime {
+  animation: rotatePlayer 3s linear infinite;
+}
+
+@keyframes rotatePlayer {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
