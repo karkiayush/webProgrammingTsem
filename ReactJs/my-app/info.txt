@@ -1,0 +1,8 @@
+React is compenent based architecture 
+The most used folders are public and src.
+
+we will upload our react components inside of src & we'll be sending props and component state will be there.
+
+Component prop : prop are like the property or details of any items that we want to include(or insert) inside of the component.
+
+Component states: They are the details inside of the components 
