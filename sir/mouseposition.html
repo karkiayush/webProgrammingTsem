@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title> Mouse Position </title>
+  <script type="text/javascript">
+    function findIt(event) {
+      document.getElementById("xcoor1").value = event.clientX;
+      document.getElementById("ycoor1").value = event.clientY;
+      document.getElementById("xcoor2").value = event.screenX;
+      document.getElementById("ycoor2").value = event.screenY;
+    }
+  </script>
+</head>
+
+<body onclick="findIt(event)">
+  <form action="">
+    <p>
+      Within the client area: <br />
+      x: <input type="text" id="xcoor1" size="4" />
+      y: <input type="text" id="ycoor1" size="4" />
+      <br /><br />
+      Relative to the origin of the screen coordinate system:
+      <br />
+      x: <input type="text" id="xcoor2" size="4" />
+      y: <input type="text" id="ycoor2" size="4" />
+    </p>
+  </form>
+
+  <p>
+    <img src="images/plane1.png" height="300" alt="(Picture of an airplane)" width="450" />
+  </p>
+</body>
+
+</html>

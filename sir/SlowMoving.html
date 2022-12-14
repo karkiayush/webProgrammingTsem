@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Moving text </title>
+  <script type="text/javascript">
+    var dom, x = 100, y = 100, finalx = 300, finaly = 400;
+
+    function initText() {
+      dom = document.getElementById('theText').style;
+      moveText(x, y);
+    }
+
+    function moveText(x, y) {
+      if (x != finalx)
+        if (x < finalx) x++;
+        else if (x > finalx) x--;
+      if (y != finaly)
+        if (y < finaly) y++;
+        else if (y > finaly) y--;
+
+      if ((x != finalx) || (y != finaly)) {
+        dom.left = x + "px";
+        dom.top = y + "px";
+        setTimeout("moveText(" + x + "," + y + ")", 10);
+      }
+    } 
+  </script>
+
+  <style type="text/css">
+    #theText {
+      position: absolute;
+      color: blue;
+      font: bold 1.7em 'Verdana';
+    }
+  </style>
+
+</head>
+
+<body onload="initText();">
+  <p>
+    <span id='theText'>Hello there!</span>
+  </p>
+</body>
+
+</html>
+
+
+
+
+<!--
+        var x = dom.left;
+        var y = dom.top;
+        var xval = x.match(/\d+/);
+        var yval = y.match(/\d+/);
+        -->

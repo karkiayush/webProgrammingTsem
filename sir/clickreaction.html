@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title> Sense events anywhere </title>
+
+    <script type = "text/javascript">
+      
+      function displayIt(evt) {
+        if(evt.ctrlKey == true){
+          var dom = document.getElementById("message").style;
+
+          dom.left = (evt.clientX - 130) + "px";
+          dom.top = (evt.clientY - 25) + "px";
+          dom.visibility = "visible";
+        }
+        
+        console.log(evt);
+      } 
+      
+      function hideIt() {
+        document.getElementById("message").style.visibility = "hidden";
+      }
+      
+    </script>
+  
+  </head>
+  
+  <body onmousedown = "displayIt(event);" onmouseup = "hideIt();">
+    <p>
+      <span id= "message"
+            style = "color: red; visibility: hidden;
+                     position: relative;
+                     font-size: 1.7em; 
+                     font-style: italic;
+                     font-weight: bold;">
+        Please don't click here!
+      </span>
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br />
+    </p>
+  </body>
+</html>

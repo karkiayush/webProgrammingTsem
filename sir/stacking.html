@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Dynamic stacking of images </title>
+  <script type="text/javascript">
+
+    var curTop = "image3";
+
+    function BringToFront(newTop) {
+
+      a = document.getElementById(curTop);
+      b = document.getElementById(newTop);
+
+      a.style.zIndex = "0";
+      b.style.zIndex = "10";
+
+      curTop = newTop;
+    }
+  </script>
+
+  <style type="text/css">
+    body {
+      background-color: grey;
+    }
+
+    .image1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .image2 {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: 0;
+    }
+
+    .image3 {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      z-index: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>
+    <img class="image1" id="image1" height="300" width="450" src="/Images/image5.jpg" alt="(Picture of an airplane)"
+      onclick="BringToFront('image1');" />
+
+    <img class="image2" id="image2" height="300" width="450" src="/Images/image3.jpg" alt="(Picture of an airplane)"
+      onclick="BringToFront('image2');" />
+
+    <img class="image3" id="image3" height="300" width="450" src="/Images/image4.jpg" alt="(Picture of an airplane)"
+      onclick="BringToFront('image3');" />
+  </p>
+
+</body>
+
+</html>
