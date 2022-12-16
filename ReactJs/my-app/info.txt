@@ -5,4 +5,8 @@ we will upload our react components inside of src & we'll be sending props and c
 
 Component prop : prop are like the property or details of any items that we want to include(or insert) inside of the component.
 
-Component states: They are the details inside of the components 
+Component states: They are the details inside of the components
+
+
+
+Node modules repo contains all of the packages that we needed to develop our react site. The node moudule must not be shared

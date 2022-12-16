@@ -4,8 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// root vanne class access gareko 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// root vanne div ma app component haldeko 
 root.render(
+  // here strict mode is used so that jasto hamro app dekhinxa local host ma testai nai dekhinxa deploy garda
   <React.StrictMode>
     <App />
   </React.StrictMode>

@@ -1,0 +1,47 @@
+<!-- write code for an html document with js code to compute the roots of a quadratic eqn from user input values of the co-efficients a,b,c using the window method prompt alert and confirm  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots finder</title>
+</head>
+
+<body>
+    <h1>Roots of Quadratic Equation</h1>
+    <script>
+        let a = prompt("coefficient 1: ");
+        Number(a)
+        let b = prompt("coefficient 2: ");
+        let c = prompt("constant: ");
+
+        let det = Math.pow(b, 2) - (4 * a * c);
+        if (det > 0) {
+            // root1 = (-b + sqrt(discriminant)) / (2 * a);
+            // root2 = (-b - sqrt(discriminant)) / (2 * a);
+            alert("");
+            let r1 = (-b + Math.sqrt(det)) / (2 * a);
+            let r2 = (-b - Math.sqrt(det)) / (2 * a);
+            alert(`The roots are real and unequal and roots are: ${r1} & ${r2}`);
+
+        }
+        else if (det == 0) {
+            let r1 = r2 = -b / (2 * a);
+            alert(`The roots are real and equal and they are ${r1} & ${r2}`);
+            // alert(`Roots: ${r1} & ${r2}`);
+        }
+
+        else {
+            let rp = -b / (2 * a);
+            let ip = Math.sqrt(-det) / (2 * a);
+            alert(`The roots are imaginary and equal and the Real and Imaginary parts are: ${rp} & ${ip}`);
+        }
+
+    </script>
+
+</body>
+
+</html>

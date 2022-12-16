@@ -11,18 +11,54 @@
 <body>
     <h1>JS REFRESHER</h1>
     <script>
-        // objects 
-        let a = {
-            r: 34,
-            m: 64,
-            fun: function method(number) {
-                console.log("The number is: " + number);
+        // // objects 
+        // let a = {
+        //     // key value pair 
+        //     r: 34,
+        //     m: 64,
+        //     fun: function method(number) {
+        //         console.log("The number is: " + number);
+        //     }
+        // }
+        // console.log(a.r);
+        // console.log(a.m);
+
+        // document.addEventListener();
+
+        //Normal function
+        let arr = [1, 2, 3, 4, 5];
+        function myfunc(number) {
+            console.log("The number is " + this);
+        }
+        myfunc();//prints out the window
+
+        // Arrow function 
+        let udf = (number) => {
+            console.log("The number is " + this);
+        }
+        udf();
+        console.log(this);
+
+        // wrapping the arrow function inside of the objects 
+        let obj = {
+            // here func is the function name 
+            func: (args) => {
+                console.log("The number is: " + this);
             }
         }
-        console.log(a.r);
-        console.log(a.m);
+        obj.func();
 
-        document.addEventListener()
+
+        // Js uses the asynchronous architecture i.e. mathi bata jaba code execute huna thalxa then, it want less blockage of code as much as it can. so here when we set the time of 30 sec, the flow goes down and console log the content and then again return back and print the content of the arrow function 
+        // using callback the js want the less blockage 
+        setTimeout(() => {
+            console.log("hello world");
+        }, 30);
+
+        console.log("I'm noob in programming, So the only thing i logged is: ");
+
+        // promises 
+
     </script>
 </body>
 
