@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
 
 let name = "Aayush Vai";
 
@@ -15,6 +16,11 @@ function App() {
       {<Navbar title=
         "Navbar Title" aboutText="About me"
         landingpage="Home" />}
+
+      {/* div  container helps to place the input area in center */}
+      <div className="container my-5">
+        <TextForm heading="Write your opinion" />
+      </div>
     </>
   );
 }
