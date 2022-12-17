@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 
-let name = "Aayush Vai"
+let name = "Aayush Vai";
 
 // Babel compiles down jsx to react.createelement()
 
@@ -21,5 +21,5 @@ function App() {
     </>
   );
 }
- 
+
 export default App;
