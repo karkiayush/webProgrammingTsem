@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Night toggle button</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .dark-mode {
+            color: white;
+            background-color: rgb(52, 50, 50);
+        }
+
+        .DNSwitch {
+            position: relative;
+            border: 4px solid black;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 90vw;
+            /* padding:10px; */
+            top: -45px;
+            background-image: url('./day-and-night.png');
+        }
+    </style>
+</head>
+
+<body id="bodyDN">
+    <h1>Day Night mode button</h1>
+    <p>We are making a switch that toogles between light and dark mode</p>
+
+    <div class="animatedSwitch">
+        <button onclick="switcher()" class="DNSwitch">Switch
+        </button>
+    </div>
+
+
+    <script>
+        function switcher() {
+            var switcher = document.body;
+            switcher.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
