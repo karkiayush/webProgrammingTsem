@@ -44,6 +44,8 @@ function App() {
           </div>
         </div>
       </nav>
+
+      {/* Named export & Default export in JS */}
     </>
   );
 }
