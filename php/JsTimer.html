@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TIMER</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var timer;
+        
+        function start(){
+            timer=setInterval(myTimer, 500);
+        }
+
+        function myTimer(){
+            const d=new Date();
+            document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+        }
+
+        function stop(){
+            clearInterval(timer);
+        }
+
+        // for calling of a function we'll use setinterval method 
+        
+        // the time given must be abit larger than the exact time such that the extra time taken by the system to run can be used from that extra time 
+        // time unit is in millisecond 
+    </script>
+
+    <form action="">
+        <input type="button" value="start" onclick="start();">
+        <input type="button" value="stop" onclick="stop();">
+    </form>
+    
+</body>
+
+</html>
