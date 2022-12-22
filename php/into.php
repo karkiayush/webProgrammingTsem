@@ -15,7 +15,7 @@ copy mode: if the php processor gets the plain html file, it directly copy the f
 
 preprocess mode: whenever the php process gets the php coded file than before returning to the webclient, it process the file and convert to its equivalent html file.
 
-                             PHP KEYWORDS 
+     PHP KEYWORDS 
 
 and default false if or break do for include require true case else foreach list return var class elseif continue extends global switch while this xor not virtual new 
 
@@ -50,4 +50,43 @@ tan(x)
 asin(x)  log(x)
 acos(x)  exp(x)
 atanx(x) log10(x)   etc...............
+
+
+In php, variable name are case sensitive but function name & keywords are not case sensitive
+
+
+SOME STRING FUNCTIONS
+strlen
+strcmp
+strpos
+substr
+
+chap(str)
+trim(str)
+utirm(str)
 -->
+
+<html>
+    <head>
+        <title>PHP intl_error_name</title>
+    </head>
+
+    <body>
+        <h1>Demo of PHP </h1>
+        <?php print "Hello Austin";
+        ?>
+    </body>
+</html>
+
+<!-- dual vs single inverted commas in php 
+in dual: we can use the variable inside of the double inverted comma 
+
+. operator for the concatenation 
+
+in single: 
+
+
+control statement in php 
+for 
+
+switch case in php: here the switch value is not necessary to be integral(integer and character) i.e it can be float or string or do exploration  -->
