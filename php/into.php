@@ -1,3 +1,34 @@
+<!--
+    ALL ABOUT PHP     
+PHP is a general-purpose scripting language geared toward web
+development
+Interpreted server-side language
+Can be written alongside HTML within PHP tags <?php ?>
+Often used with relational databases such as MySQL
+Relatively easy language to learn -->
+
+<!-- Working method of php 
+
+As php being the interpreted server side scripting language, so the code that we writes is processed on the server. 
+
+The main reason of using php for server side scripting for web programming because of its practicality as we know it is interpreted, can be written along with the html tags, also often used with the relational data bases MYSQL 
+
+For php to work on our local machine, we have to install php itself and web servers like APACHE or NGIN X
+
+lamp stack: os for linux
+apache: web server software
+mysql: database
+
+
+PHP is one of the best choices for freelancers and small
+businesses as it is practical, easy to setup, use and deploy
+and you can create projects quicker than if you used
+something else
+
+-->
+
+
+
 <!-- asp = active server pages 
 server side jsp : java server page
 firstly developed as the personal home page 
@@ -66,7 +97,7 @@ trim(str)
 utirm(str)
 -->
 
-<html>
+<!-- <html>
     <head>
         <title>PHP intl_error_name</title>
     </head>
@@ -76,7 +107,7 @@ utirm(str)
         <?php print "Hello Austin";
         ?>
     </body>
-</html>
+</html> -->
 
 <!-- dual vs single inverted commas in php 
 in dual: we can use the variable inside of the double inverted comma 
@@ -90,3 +121,41 @@ control statement in php
 for 
 
 switch case in php: here the switch value is not necessary to be integral(integer and character) i.e it can be float or string or do exploration  -->
+
+<!-- What we'll learn 
+PHP Setup
+VS Code Setup w/Live Reload
+Variables& Data Types
+Arrays& Array Methods
+Conditionals
+Loops & Iteration
+Functions
+Superglobals
+Working With Forms
+$_GET & $_POST
+Sanitization & Validation
+Cookies
+Sessions
+File Handling
+File Uploading
+Errors& Exceptions
+0OP & Classes
+include & require
+PHPMyAdmin
+MySQLi & Database Interaction
+-->
+
+<?php
+$data = array("a", "b", "c");
+
+echo $data[0];
+echo $data[1];
+print "$data[2]\n";
+echo "hello world";
+
+// variable
+$name = "joe";
+echo $name;
+$age = 15;
+var_dump($age);
+?>

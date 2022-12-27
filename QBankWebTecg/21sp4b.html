@@ -1,0 +1,58 @@
+<!-- Write a JavaScript program which validates the user data (name, email, contact no) and displays the success message if
+validated successfully. Also create the HTML form for entering the data -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS form validation</title>
+</head>
+
+<body>
+    <div id="error"></div><!--  don't know why  -->
+
+    <!-- Form tag  -->
+    <form action="/" method="GET" id="form" onsubmit="return validator()">
+        <!-- For name  -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div><br>
+
+        <!-- For email  -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="">
+            <span id="notice"></span>
+        </div><br>
+
+        <!-- For contact number  -->
+        <div>
+            <label for="contact">Contact number:</label>
+            <input type="text" id="contact" name="contact" value="">
+            <!-- here the message will be shown if the user don't fill be mobile num section  -->
+            <span id="messages"></span>
+        </div><br>
+        <input type="submit" value="submit">
+    </form>
+
+
+    <!-- JS logic  -->
+    <script>
+        function validator() {
+            var mobNum = document.getElementById('contact').value;
+
+            var emailAddress = document.getElementById('email').value;
+
+            // validating the mobile number
+            if (mobNum == "" || isNaN(mobNum) || mobNum.length != 10) {
+                document.getElementById("messages").innerHTML = "!!fill  your mobile number";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
