@@ -12,4 +12,4 @@ const result1 = '55';
 const result2 = 55;
 console.log(result1 == result2 ? 'value is same' : 'value is not same');
 console.log('\n2nd result');
-console.log(result1 == result2 ? 'value is same' : 'value is not same');
+console.log(result1 == result2 ? 'value is same' : 'value is not same');   
