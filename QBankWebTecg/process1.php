@@ -9,8 +9,13 @@
 
         $fp = fopen('information.txt', 'a');
         fwrite($fp, $Name);
-        fwrite($fp, $UserId);
+        fwrite($fp, "<br/>");
+        fwrite($fp, $UserId."<br/>");
         fwrite($fp, $Password);
+        // fwrite($fp, "<br/>");
+
+
+        echo readfile("information.txt");
     }
     ?>
 </body>

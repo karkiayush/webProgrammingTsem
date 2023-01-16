@@ -5,65 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CDN file  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1
+    /css/all.min.css">
+
+
     <title>Aayush Karki - Engineering Student, Coder, Tech Enthusiast</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            display: flex;
-        }
-
-        body {
-            background-color: gray;
-            color: black;
-        }
-
-        .sidebar {
-            background-color: rgb(138, 138, 221);
-            width: 20vw;
-            font-family: 'Fira Sans', sans-serif;
-            font-size: 20px;
-        }
-
-        .sidebar nav {
-            padding: 72px;
-        }
-
-        .main {
-            background-color: lightgreen;
-            width: 80vw;
-
-        }
-    </style>
-
 </head>
 
 <body>
-    <div class="container">
-        <!-- For the side bar  -->
-        <div class="sidebar nav">
-            <!-- Aayush -->
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>My Introduction</li>
-                    <li>Projects</li>
-                    <li>Education</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Navigation Bar  -->
+    <ul>
+        <label for="menubtn" class="menubtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- These links must be clickable so we'll use anker tag  -->
 
-        <!-- For the main content  -->
-        <div class="main">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus nemo nostrum
-            obcaecati praesentium autem aliquam blanditiis tempora amet unde. Natus cumque vel placeat unde soluta.
-            Porro, fugiat cumque tempora illum ipsa magni nam iste, eius similique nemo cupiditate quidem!</div>
+        <!-- # forces the link to go nowhere  -->
+        <li class="active">
+            <a href="#">Home</a>
+        </li>
+
+        <li>
+            <div class="navbox"><a href="#">Projects</a></div>
+        </li>
+
+        <li><a href="#">Skills</a></li>
+
+        <li><a href="#">Qualification</a></li>
+
+        <li><a href="#studyMaterialSection">Study Materials</a></li>
+
+        <li><a href="#">About Me</a></li>
+
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <h1 id="greet">Hi, there</h1>
+    <div class="intro">
+        <p class="introtext">Its me Aayush, an undergrad student who is pursuing IT Engineering from CCMT, Saddobato
+            Lalitpur</p>
     </div>
 </body>
 
