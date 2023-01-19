@@ -14,15 +14,11 @@
     <h1>Roots of Quadratic Equation</h1>
     <script>
         let a = prompt("coefficient 1: ");
-        Number(a)
         let b = prompt("coefficient 2: ");
         let c = prompt("constant: ");
 
         let det = Math.pow(b, 2) - (4 * a * c);
         if (det > 0) {
-            // root1 = (-b + sqrt(discriminant)) / (2 * a);
-            // root2 = (-b - sqrt(discriminant)) / (2 * a);
-            alert("");
             let r1 = (-b + Math.sqrt(det)) / (2 * a);
             let r2 = (-b - Math.sqrt(det)) / (2 * a);
             alert(`The roots are real and unequal and roots are: ${r1} & ${r2}`);

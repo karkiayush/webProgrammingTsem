@@ -31,3 +31,11 @@ arrowMethod();
 const naam = 'joe denly';
 const result = naam.toUpperCase().split(" ");
 console.log(result);
+
+let stringName = 'hello';
+console.log(stringName);
+
+let splitedString = stringName.split();
+let reveredArray = splitedString.reverse();
+let finalAns = reveredArray.join();
+console.log(finalAns);
