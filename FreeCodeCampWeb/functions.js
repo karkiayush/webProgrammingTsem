@@ -39,3 +39,8 @@ let splitedString = stringName.split();
 let reveredArray = splitedString.reverse();
 let finalAns = reveredArray.join();
 console.log(finalAns);
+
+
+const afunction = (() => { console.log("arrow method"); })();
+
+afunction;

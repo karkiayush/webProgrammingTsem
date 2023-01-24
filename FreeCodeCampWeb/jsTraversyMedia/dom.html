@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css">
+    <script src="dom.js"></script>
+
+    <title>Dom</title>
+</head>
+
+<body>
+    <h1></h1>
+    <p id="demoPara"></p>
+    <ul class="items">
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+    <form action="">
+        <div class="formContainer">
+            <div class="userName">
+                <label for="name">Full Name: </label><br>
+                <input type="text" id="name" class="Name" name="name">
+            </div>
+            <div class="userEmail">
+                <label for="emailAddress">Email Address: </label><br>
+                <input type="email" id="emailAddress" class="mail" name="mail">
+            </div>
+
+            <div class="submitBtn">
+                <input type="submit" value="Submit">
+            </div>
+    </form>
+    <script>
+        // single element Selector 
+        document.getElementById("demoPara").innerHTML = "Hello Learners";
+
+        document.querySelector('h1').innerHTML = "Demo of query selector for h1";
+
+        document.querySelectorAll('.item') = "queryselectorForall";
+    </script>
+</body>
+
+</html>

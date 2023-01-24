@@ -1,0 +1,12 @@
+Variables & Data Types
+Arrays
+Object Literals
+Methods for strings, arrays, objects, etc
+Loops for, while, for...of, forEach, map,filter
+Conditionals (if, ternary & switch)
+Functions (normal & arrow)
+OOP (prototypes & classes)
+DOM Selection
+DOM manipulation
+Events
+Basic Form Validation
