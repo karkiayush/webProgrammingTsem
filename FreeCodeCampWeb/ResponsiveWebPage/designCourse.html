@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/designCourse.css">
+
+    <title>Index page</title>
+</head>
+
+<body>
+    <div class="navbar" id="topNav">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span>
+            </a>
+
+            <img id="mobile-cta" class="mobile-menu" src="./Icons/menu.svg" alt="Open Navigation">
+            <!-- For different links  -->
+            <nav>
+                <img class="mobile-menu-exit" id="mobile-exit" src="./Icons/exit.svg" alt="close navigation menu">
+                <ul class="primary-nav">
+                    <li>
+                        <a href="#" class="current">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="go-premium-cta">Go Premium</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- For middle section  -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="sub-head">It's Nitty &amp; Gnitty !</p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+
+                    <a href="#">
+                        <img class="watch-video" id="video-watch-demo" src="./Icons/watch.svg" alt="watch a video">
+                        <p class="video-para">watch
+                            a video</p>
+                    </a>
+                </div>
+            </div>
+
+            <img src="./Icons/illustration.svg" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <!-- Feature section  -->
+    <section class="features-section">
+        <div class="container">
+            <ul>
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Remainder</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaborations</li>
+                <li>Other awesome feature</li>
+            </ul>
+
+            <img src="./Icons/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+
+    <!-- Testimonial section : this section shows what people think and review your site and your product -->
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <!-- First review  -->
+                    <img src="./Icons/person.jpg" alt="person">
+
+                    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae tempore corporis, eos
+                        exercitationem magni consequuntur cumque perspiciatis vel aut tenetur blanditiis consequatur.
+                    </blockquote>
+                    <cite>John Doe</cite>
+                </li>
+
+                <!-- Second review  -->
+                <li>
+                    <img src="./Icons/person.jpg" alt="person">
+
+                    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae tempore corporis, eos
+                        exercitationem magni consequuntur cumque perspiciatis vel aut tenetur blanditiis consequatur.
+                    </blockquote>
+                    <cite>John Doe</cite>
+                </li>
+
+                <!-- Third review  -->
+                <li>
+                    <img src="./Icons/person.jpg" alt="person">
+
+                    <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae tempore corporis, eos
+                        exercitationem magni consequuntur cumque perspiciatis vel aut tenetur blanditiis consequatur.
+                    </blockquote>
+                    <cite>John Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact section  -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <!-- Name  -->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <!-- Email  -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <!--Message-->
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="50" rows="10" placeholder="Leave a message"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+            </div>
+
+            <!-- Embedding google map  -->
+            <div class="contact-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7068.0058679319445!2d85.31233009546487!3d27.655380934063146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb177ef8d6037b%3A0xbd8b6e4dd901aa11!2sTikhedewal%2C%20Lalitpur%2044700!5e0!3m2!1sen!2snp!4v1674582172130!5m2!1sen!2snp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Taking to top  -->
+    <div class="topGoingContainer" id="btnLink">
+        <a href="#topNav">GO to top</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+// Since we are using the blue color having hex code of: #007AF3; for multiple times line in "That", in the "Testimonial Section" and in other places so for that, we gonna use "custom properties"
+
+:root {
+    --primary-color: #007af3;
+}
+
+body {
+    background: #f2f2f2;
+    margin: 0;
+    font-family: Monaco;
+}
+
+.navbar {
+    background: white;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 1em;
+
+    // for logo of navbar
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        font-size: 1.2em;
+    }
+
+    span {
+        color: var(--primary-color);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+.primary-nav li,
+.secondary-nav,
+.primary-nav li a,
+.secondary-nav li a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    color: #444444;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+
+    .hero-img {
+        // position: relative;
+        margin-top: 4em;
+        width: 70%;
+    }
+}
+
+.left-col {
+    .sub-head {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .3em;
+        color: gray
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.2em;
+        margin-top: .2em;
+    }
+
+    .primary-cta {
+        background: var(--primary-color);
+        color: white;
+        padding: .6em 1.3em;
+        border-radius: 5em;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    .watch-video {
+        display: block;
+        position: relative;
+        margin-left: 7.5em;
+        margin-right: 6em;
+        top: 2.2em;
+    }
+
+    .video-para {
+        margin-left: 3em;
+    }
+}
