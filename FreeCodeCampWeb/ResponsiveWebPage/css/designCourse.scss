@@ -2,6 +2,8 @@
 
 :root {
     --primary-color: #007af3;
+
+    --secondary-color: #006BD6;
 }
 
 body {
@@ -108,5 +110,92 @@ section {
 
     .video-para {
         margin-left: 3em;
+    }
+}
+
+section.features-section {
+    background: #20272E;
+    color: whitesmoke;
+
+    // Don't know why it is not working 
+    ul .features-list {
+        margin: 0;
+        padding-left: .5em;
+
+        li {
+            font-size: 1em;
+            margin-bottom: 4em;
+            margin-left: 2em;
+            position: relative;
+        }
+
+        &:before {
+            content: '';
+            background-image: url('../Icons/bullet.svg');
+            height: 20px;
+            width: 20px;
+            background-size: contain;
+        }
+    }
+
+    //Not working till here 
+}
+
+// Hiding the person hand img carrying phone for mobile version 
+.features-section img {
+    display: none;
+}
+
+// Testiomonial Section 
+.testimonials-section {
+    background: var(--primary-color);
+
+    ul {
+        li {
+            background: var(--secondary-color);
+            text-align: center;
+            padding: 2em 1em;
+            margin: 0 auto 5em auto;
+            border-radius: 2em;
+            color: white;
+
+            img {
+                position: relative;
+                height: 5em;
+                width: 5em;
+                border: 6px solid var(--secondary-color);
+                border-radius: 50%;
+                top: -4.5em;
+            }
+
+            cite {
+                font-weight: bold;
+                font-style: normal;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+
+.contact-section {
+
+    h2 {
+        font-size: 2em;
+    }
+
+    label {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    input,
+    textarea {
+        margin-bottom: 1.5em;
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: .3em;
+        padding: .6em;
+        box-sizing: border-box;
     }
 }

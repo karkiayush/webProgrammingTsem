@@ -1,5 +1,6 @@
 :root {
   --primary-color: #007af3;
+  --secondary-color: #006BD6;
 }
 
 body {
@@ -105,5 +106,82 @@ section {
 
 .left-col .video-para {
   margin-left: 3em;
+}
+
+section.features-section {
+  background: #20272E;
+  color: whitesmoke;
+}
+
+section.features-section ul .features-list {
+  margin: 0;
+  padding-left: .5em;
+}
+
+section.features-section ul .features-list li {
+  font-size: 1em;
+  margin-bottom: 4em;
+  margin-left: 2em;
+  position: relative;
+}
+
+section.features-section ul .features-list:before {
+  content: '';
+  background-image: url("../Icons/bullet.svg");
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+}
+
+.features-section img {
+  display: none;
+}
+
+.testimonials-section {
+  background: var(--primary-color);
+}
+
+.testimonials-section ul li {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 2em 1em;
+  margin: 0 auto 5em auto;
+  border-radius: 2em;
+  color: white;
+}
+
+.testimonials-section ul li img {
+  position: relative;
+  height: 5em;
+  width: 5em;
+  border: 6px solid var(--secondary-color);
+  border-radius: 50%;
+  top: -4.5em;
+}
+
+.testimonials-section ul li cite {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+}
+
+.contact-section label {
+  display: block;
+  font-size: 1.2em;
+}
+
+.contact-section input,
+.contact-section textarea {
+  margin-bottom: 1.5em;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: .3em;
+  padding: .6em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=designCourse.css.map */
