@@ -8,7 +8,7 @@
 
 body {
     // it is not done yet 
-    background: #f2f2f2;
+    background: #fcf8f8;
     margin: 0;
     font-family: Monaco;
 }
@@ -32,171 +32,228 @@ body {
     }
 
     nav {
+        // position fixed makes the nav links fixed such that it doesn't scroll along with website scrolling. Position: fixed brings the element to the left most side
+        position: fixed;
+        // z-index is used to style the element having position absolute or position fixed. High value of z-index means it's gonna sit in top of everything.
+        z-index: 999;
+        width: 66%;
+        right: 0;
+        // text-align: center;
+        top: 0;
+        height: 100vh;
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: #20272E;
+
+        .primary-nav {
+            margin-top: 2em;
+        }
+
+        display: none;
+
+        li {
+            display: block;
+            text-align: right;
+            margin: 2em;
+            font-size: 1em;
+
+            a {
+                &:hover {
+                    font-weight: bold;
+                    color: lightgreen;
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        .container {
+            display: flex;
+            place-content: space-between;
+        }
+
+        .mobile-menu-exit {
+            cursor: pointer;
+        }
+    }
+
+    .mobile-menu-exit {
+        float: right;
+    }
+
+    .primary-nav li,
+    .secondary-nav,
+    .primary-nav li a,
+    .secondary-nav li a {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        padding: 5em 2em;
+    }
+
+    .hero {
+        text-align: center;
+
+        .hero-img {
+            // position: relative;
+            margin-top: 4em;
+            width: 70%;
+        }
+    }
+
+    .left-col {
+        .sub-head {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: .3em;
+            color: gray
+        }
+
+        h1 {
+            font-size: 2.5em;
+            line-height: 1.2em;
+            margin-top: .2em;
+        }
+
+        .primary-cta {
+            background: var(--primary-color);
+            color: white;
+            padding: .6em 1.3em;
+            border-radius: 5em;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .watch-video {
+            display: block;
+            position: relative;
+            margin-left: 7.5em;
+            margin-right: 6em;
+            top: 2.2em;
+        }
+
+        .video-para {
+            margin-left: 3em;
+        }
+    }
+
+    section.features-section {
+        background: #20272E;
+        color: whitesmoke;
+
+        // Don't know why it is not working 
+        ul .features-list {
+            margin: 0;
+            padding-left: .5em;
+
+            li {
+                font-size: 1em;
+                margin-bottom: 4em;
+                margin-left: 2em;
+                position: relative;
+            }
+
+            &:before {
+                content: '';
+                background-image: url('../Icons/bullet.svg');
+                height: 20px;
+                width: 20px;
+                background-size: contain;
+            }
+        }
+
+        //Not working till here 
+    }
+
+    // Hiding the person hand img carrying phone for mobile version 
+    .features-section img {
         display: none;
     }
 
-    .container {
-        display: flex;
-        place-content: space-between;
-    }
-
-    .mobile-menu {
-        cursor: pointer;
-    }
-}
-
-.primary-nav li,
-.secondary-nav,
-.primary-nav li a,
-.secondary-nav li a {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-a {
-    color: #444444;
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    padding: 5em 2em;
-}
-
-.hero {
-    text-align: center;
-
-    .hero-img {
-        // position: relative;
-        margin-top: 4em;
-        width: 70%;
-    }
-}
-
-.left-col {
-    .sub-head {
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: .3em;
-        color: gray
-    }
-
-    h1 {
-        font-size: 2.5em;
-        line-height: 1.2em;
-        margin-top: .2em;
-    }
-
-    .primary-cta {
+    // Testiomonial Section 
+    .testimonials-section {
         background: var(--primary-color);
-        color: white;
-        padding: .6em 1.3em;
-        border-radius: 5em;
-        font-size: 1.4em;
-        font-weight: bold;
+
+        ul {
+            li {
+                background: var(--secondary-color);
+                text-align: center;
+                padding: 2em 1em;
+                margin: 0 auto 5em auto;
+                border-radius: 2em;
+                color: white;
+
+                img {
+                    position: relative;
+                    height: 5em;
+                    width: 5em;
+                    border: 6px solid var(--secondary-color);
+                    border-radius: 50%;
+                    top: -4.5em;
+                }
+
+                cite {
+                    font-weight: bold;
+                    font-style: normal;
+                    font-size: 1.5em;
+                }
+            }
+        }
     }
 
-    .watch-video {
-        display: block;
-        position: relative;
-        margin-left: 7.5em;
-        margin-right: 6em;
-        top: 2.2em;
-    }
 
-    .video-para {
-        margin-left: 3em;
-    }
-}
+    .contact-section {
 
-section.features-section {
-    background: #20272E;
-    color: whitesmoke;
+        h2 {
+            font-size: 2em;
+        }
 
-    // Don't know why it is not working 
-    ul .features-list {
-        margin: 0;
-        padding-left: .5em;
-
-        li {
+        label {
+            display: block;
             font-size: 1em;
-            margin-bottom: 4em;
-            margin-left: 2em;
-            position: relative;
         }
 
-        &:before {
-            content: '';
-            background-image: url('../Icons/bullet.svg');
-            height: 20px;
-            width: 20px;
-            background-size: contain;
+        input,
+        textarea {
+            margin-bottom: 1.5em;
+            width: 100%;
+            border: 1px solid grey;
+            border-radius: .3em;
+            padding: .5em;
+            box-sizing: border-box;
         }
-    }
 
-    //Not working till here 
-}
-
-// Hiding the person hand img carrying phone for mobile version 
-.features-section img {
-    display: none;
-}
-
-// Testiomonial Section 
-.testimonials-section {
-    background: var(--primary-color);
-
-    ul {
-        li {
-            background: var(--secondary-color);
-            text-align: center;
-            padding: 2em 1em;
-            margin: 0 auto 5em auto;
-            border-radius: 2em;
+        // For submit button named as "sendmessage "
+        .send-message-cta {
+            background: var(--primary-color);
+            border: none;
+            border-radius: 5em;
+            font-weight: bold;
             color: white;
-
-            img {
-                position: relative;
-                height: 5em;
-                width: 5em;
-                border: 6px solid var(--secondary-color);
-                border-radius: 50%;
-                top: -4.5em;
-            }
-
-            cite {
-                font-weight: bold;
-                font-style: normal;
-                font-size: 1.5em;
-            }
+            margin-bottom: 5em;
+            font-family: Monaco;
+            font-size: 1.2em;
+            display: inline-block;
+            padding: .6em 1em;
+            width: unset;
+            cursor: pointer;
         }
     }
-}
 
-
-.contact-section {
-
-    h2 {
-        font-size: 2em;
-    }
-
-    label {
-        display: block;
-        font-size: 1.2em;
-    }
-
-    input,
-    textarea {
-        margin-bottom: 1.5em;
-        width: 100%;
-        border: 1px solid grey;
-        border-radius: .3em;
-        padding: .6em;
-        box-sizing: border-box;
-    }
+    // iframe {
+    width: 100%;
+    height: 400px;
+    // }
 }

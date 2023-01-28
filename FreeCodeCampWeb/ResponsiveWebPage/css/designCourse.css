@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #f2f2f2;
+  background: #fcf8f8;
   margin: 0;
   font-family: Monaco;
 }
@@ -14,6 +14,8 @@ body {
   margin: 10px;
   border-radius: 8px;
   padding: 1em;
+  width: 100%;
+  height: 400px;
 }
 
 .navbar .logo {
@@ -28,66 +30,96 @@ body {
 }
 
 .navbar nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #20272E;
   display: none;
 }
 
-.navbar .container {
+.navbar nav .primary-nav {
+  margin-top: 2em;
+}
+
+.navbar nav li {
+  display: block;
+  text-align: right;
+  margin: 2em;
+  font-size: 1em;
+}
+
+.navbar nav li a:hover {
+  font-weight: bold;
+  color: lightgreen;
+  font-size: 1.3em;
+}
+
+.navbar nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   place-content: space-between;
 }
 
-.navbar .mobile-menu {
+.navbar nav .mobile-menu-exit {
   cursor: pointer;
 }
 
-.primary-nav li,
-.secondary-nav,
-.primary-nav li a,
-.secondary-nav li a {
+.navbar .mobile-menu-exit {
+  float: right;
+}
+
+.navbar .primary-nav li,
+.navbar .secondary-nav,
+.navbar .primary-nav li a,
+.navbar .secondary-nav li a {
   list-style-type: none;
   text-decoration: none;
 }
 
-a {
-  color: #444444;
+.navbar a {
+  color: white;
   text-decoration: none;
 }
 
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-section {
+.navbar section {
   padding: 5em 2em;
 }
 
-.hero {
+.navbar .hero {
   text-align: center;
 }
 
-.hero .hero-img {
+.navbar .hero .hero-img {
   margin-top: 4em;
   width: 70%;
 }
 
-.left-col .sub-head {
+.navbar .left-col .sub-head {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: .3em;
   color: gray;
 }
 
-.left-col h1 {
+.navbar .left-col h1 {
   font-size: 2.5em;
   line-height: 1.2em;
   margin-top: .2em;
 }
 
-.left-col .primary-cta {
+.navbar .left-col .primary-cta {
   background: var(--primary-color);
   color: white;
   padding: .6em 1.3em;
@@ -96,7 +128,7 @@ section {
   font-weight: bold;
 }
 
-.left-col .watch-video {
+.navbar .left-col .watch-video {
   display: block;
   position: relative;
   margin-left: 7.5em;
@@ -104,28 +136,28 @@ section {
   top: 2.2em;
 }
 
-.left-col .video-para {
+.navbar .left-col .video-para {
   margin-left: 3em;
 }
 
-section.features-section {
+.navbar section.features-section {
   background: #20272E;
   color: whitesmoke;
 }
 
-section.features-section ul .features-list {
+.navbar section.features-section ul .features-list {
   margin: 0;
   padding-left: .5em;
 }
 
-section.features-section ul .features-list li {
+.navbar section.features-section ul .features-list li {
   font-size: 1em;
   margin-bottom: 4em;
   margin-left: 2em;
   position: relative;
 }
 
-section.features-section ul .features-list:before {
+.navbar section.features-section ul .features-list:before {
   content: '';
   background-image: url("../Icons/bullet.svg");
   height: 20px;
@@ -133,15 +165,15 @@ section.features-section ul .features-list:before {
   background-size: contain;
 }
 
-.features-section img {
+.navbar .features-section img {
   display: none;
 }
 
-.testimonials-section {
+.navbar .testimonials-section {
   background: var(--primary-color);
 }
 
-.testimonials-section ul li {
+.navbar .testimonials-section ul li {
   background: var(--secondary-color);
   text-align: center;
   padding: 2em 1em;
@@ -150,7 +182,7 @@ section.features-section ul .features-list:before {
   color: white;
 }
 
-.testimonials-section ul li img {
+.navbar .testimonials-section ul li img {
   position: relative;
   height: 5em;
   width: 5em;
@@ -159,29 +191,44 @@ section.features-section ul .features-list:before {
   top: -4.5em;
 }
 
-.testimonials-section ul li cite {
+.navbar .testimonials-section ul li cite {
   font-weight: bold;
   font-style: normal;
   font-size: 1.5em;
 }
 
-.contact-section h2 {
+.navbar .contact-section h2 {
   font-size: 2em;
 }
 
-.contact-section label {
+.navbar .contact-section label {
   display: block;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
-.contact-section input,
-.contact-section textarea {
+.navbar .contact-section input,
+.navbar .contact-section textarea {
   margin-bottom: 1.5em;
   width: 100%;
   border: 1px solid grey;
   border-radius: .3em;
-  padding: .6em;
+  padding: .5em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.navbar .contact-section .send-message-cta {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 5em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5em;
+  font-family: Monaco;
+  font-size: 1.2em;
+  display: inline-block;
+  padding: .6em 1em;
+  width: unset;
+  cursor: pointer;
 }
 /*# sourceMappingURL=designCourse.css.map */
